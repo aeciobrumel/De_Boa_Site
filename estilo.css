@@ -162,16 +162,29 @@ main{
 }
 .texto_qrcode{
    
+  
+}
+.qrcode{
+    margin-top: 15%;
     padding-right: 10%;
     padding-left: 10%;
-    background-color: rgb(180, 12, 12);
+    background-color: rgb(214, 178, 178);
     text-align: center;
     align-items: center;
     width: 50%;
     float: left;
 }
-.qrcode{float: left;
-    width: 100%;
+.imagem_qrcode{
+    background-image: url(img/qrcodeMedio.png);
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 650px;
+    float: right;
+    margin-top: 10%;
+    padding-right: 20%;
+    background-color: rgb(255, 255, 255);
+
+            
 }
 
 h1{
@@ -359,11 +372,22 @@ fim     tela normal
         margin-right: 5%;
     }
 
+    .imagem_qrcode{
+        background-image: url(img/qrcodeP.png);
+        background-repeat: no-repeat;
+        width: 50%;
+        float: right;
+        margin-top: 20%;
+        padding-right: 20%;
+        background-color: rgb(255, 255, 255);
+    
+                
+    }
 
 }
 
 
-@media (max-width: 880px) {
+@media (max-width: 899px) {
     footer { position: static;}
     .footer-container{padding: 10px;}
     .footer-container .footer-content-1,
@@ -383,6 +407,34 @@ fim     tela normal
      margin:0 auto 0;
      width: 70%;
     }
+
+
+    .qrcode{
+        margin-top: 15%;
+        padding-right: 10%;
+        padding-left: 10%;
+        background-color: rgb(214, 178, 178);
+        text-align: center;
+        align-items: center;
+        width: 60%;
+        float: left;
+    }
+    .imagem_qrcode{
+        background-image: url(img/qrcodePequeno.png);
+        background-repeat: no-repeat;
+        width: 40%;
+        height: 650px;
+        float: right;
+        margin-top: 16%;
+        padding-right: 20%;
+        background-color: rgb(255, 255, 255);
+    
+                
+    }
+    
+
+
+
     }
 
 
@@ -433,6 +485,7 @@ fim     tela normal
     }
     .navbar {
         background-image: url(img/logoAzulMedia.png);
+        margin: 5%;
         background-repeat: no-repeat;
         background-position: center;
         display: flex;
@@ -581,5 +634,103 @@ fim     tela normal
         padding-left: 10%;
     
     }
+
+}
+
+@media only screen and (max-width: 608px) {
+    .navbar {
+        background-image: url(img/logoAzulMedia.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    
+    .nav-menu {
+        
+        position: fixed;
+        left: -100%;
+        top: 5rem;
+        flex-direction: column;
+        background-color: #fff;
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow:
+            0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-item {
+        margin: 2.5rem 0;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        -webkit-transform: translateY(8px) rotate(45deg);
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        -webkit-transform: translateY(-8px) rotate(-45deg);
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .imagem_Celular{
+        background-image: url(img/celularAppPequena.png);
+        width: 50%;
+        float: right;
+        margin-top: 30%;
+        padding-top: 20%;
+        padding-right: 25%;
+        
+
+                
+    }
+    .texto_sobre{
+        width: 50%;
+        float: left;
+        padding-right: 3%;
+        padding-left: 10%;
+    
+    }
+    .qrcode{
+        margin-top: 15%;
+        padding-right: 10%;
+        padding-left: 10%;
+        background-color: rgb(214, 178, 178);
+        text-align: center;
+        align-items: center;
+        width: 50%;
+        float: left;
+    }
+    .imagem_qrcode{
+        background-image: url(img/qrcodePequeno.png);
+        background-repeat: no-repeat;
+        width: 50%;
+        height: 650px;
+        float: right;
+        margin-top: 16%;
+        padding-right: 20%;
+        background-color: rgb(255, 255, 255);
+    
+                
+    }
+    
 
 }
