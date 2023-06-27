@@ -7,7 +7,7 @@
 }
 
 html {
-    font-size: 62.5%;
+    font-size: 92.5%;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -23,6 +23,7 @@ body{
     background-color: #ffffff;
     position: relative;
     overflow-x: hidden;   
+    width: 100%;
 }
 main{
     background-color: rgb(255, 255, 255);
@@ -120,7 +121,7 @@ main{
     width: 50%;
     height: 650px;
     float: right;
-    margin-top: 5%;
+    margin-top: 10%;
     padding-right: 20%;
     background-color: rgb(255, 255, 255);
 
@@ -132,7 +133,7 @@ main{
     height: 60%;
     width: 100vw;
     background-color:#36507D;
-  display: flex;
+  
   flex-direction: column;
     margin-top: 60%;
     align-items: center;
@@ -165,7 +166,8 @@ main{
   
 }
 .qrcode{
-    margin-top: 15%;
+
+    margin-top: 5%;
     padding-right: 10%;
     padding-left: 10%;
     background-color: rgb(255, 255, 255);
@@ -194,6 +196,10 @@ h1{
 
 
 /*rodape*/
+
+
+    
+
 .footer-container{
 
     position: relative;
@@ -201,7 +207,7 @@ h1{
     bottom: 1%;
     background-color: #36507D;
     width: 100%;
-    text-align: left;
+    text-align: center;
     padding: 30px;
     padding-top: 1%;
 
@@ -258,6 +264,8 @@ vertical-align: top;
     .footer-container .footer-content-2{
     width: 35%;
     font-size: 14px;
+
+    padding-top: 3%;
     }
     .footer-container .footer-content-2 i{
     background:  #33383b;
@@ -380,7 +388,7 @@ fim     tela normal
         background-repeat: no-repeat;
         width: 50%;
         float: right;
-        margin-top: 20%;
+        margin-top: 60%;
         padding-right: 20%;
         background-color: rgb(255, 255, 255);
     
@@ -413,7 +421,7 @@ fim     tela normal
 
 
     .qrcode{
-        margin-top: 15%;
+        margin-top: 3%;
         padding-right: 10%;
         padding-left: 10%;
         background-color: rgb(255, 255, 255);
