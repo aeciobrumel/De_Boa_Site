@@ -204,6 +204,9 @@ h1{
     text-align: left;
     padding: 30px;
     padding-top: 1%;
+
+    border-radius: 9px;
+    
     }
     .footer-container .footer-content-1,
 .footer-container .footer-content-2,
@@ -299,7 +302,7 @@ vertical-align: top;
     height: 35px;
     cursor: pointer;
     border-radius: 50%;
-    color: #829990;
+    color: #ffffff;
     text-align: center;
     padding: 5px;
     margin: 5px 5px 12px 12px;
@@ -329,7 +332,7 @@ vertical-align: top;
     color: #fc0000;
     }
     .footer-container .footer-content-3 p{
-     color: #929990;
+     color: #ffffff;
      font-size: 13px;
      padding: 10px;
     }
@@ -338,7 +341,7 @@ vertical-align: top;
     }
     .footer-container .copyright p{
      text-align: center;
-     color:#829990;
+     color:#ffffff;
      padding: 5px;
      font-size: 12px;
     }
@@ -620,7 +623,7 @@ fim     tela normal
         background-image: url(img/celularAppPequena.png);
         width: 43%;
         float: right;
-        margin-top: 30%;
+        margin-top: 25%;
         padding-top: 20%;
         padding-right: 25%;
         
@@ -695,8 +698,8 @@ fim     tela normal
         background-image: url(img/celularAppPequena.png);
         width: 50%;
         float: right;
-        margin-top: 30%;
-        padding-top: 20%;
+        margin-top: 20%;
+        padding-top: 35%;
         padding-right: 25%;
         
 
@@ -713,7 +716,7 @@ fim     tela normal
         margin-top: 15%;
         padding-right: 10%;
         padding-left: 10%;
-        background-color: rgb(214, 178, 178);
+        background-color: rgb(255, 255, 255);
         text-align: center;
         align-items: center;
         width: 50%;
@@ -725,7 +728,7 @@ fim     tela normal
         width: 50%;
         height: 650px;
         float: right;
-        margin-top: 16%;
+        margin-top: 435%;
         padding-right: 20%;
         background-color: rgb(255, 255, 255);
     
