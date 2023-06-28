@@ -130,6 +130,9 @@ main{
 
 /* barra de marketing   */
 .caixa-marketing{
+    padding: 3%;
+    border: 12px;
+    border-radius: 5px;
     height: 60%;
     width: 100vw;
     background-color:#36507D;
