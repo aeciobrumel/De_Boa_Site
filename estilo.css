@@ -9,6 +9,8 @@
 html {
     font-size: 92.5%;
     font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+
 }
 
 li {
@@ -115,6 +117,7 @@ main{
 
 
 }
+
 .imagem_Celular{
     background-image: url(img/celularApp.png);
     background-repeat: no-repeat;
@@ -191,6 +194,67 @@ main{
 
             
 }
+.texto_sobre2{
+    width: 50%;
+    float: left;
+    padding-top: 15%;
+    padding-right: 10%;
+    padding-left: 10%;
+    background-color: rgb(255, 255, 255);
+
+
+}
+
+.carrossel{
+    padding-top: 8%;
+padding-left: 50%;
+
+}
+.container-slider {
+    display: flex;
+    width: 50%;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .container-images {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 700px;
+  }
+  
+  .slider {
+    opacity: 0;
+    transition: opacity .2s;
+    position: absolute;
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .on {
+    opacity: 1;
+  }
+  
+  #prev-button, #next-button {
+    width: 30px;
+    height: 30px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  
+  #prev-button img, #next-button img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  #prev-button {
+    transform: rotate(180deg);
+  }
 
 h1{
     color: #fff;
