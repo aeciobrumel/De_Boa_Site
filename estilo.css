@@ -888,28 +888,29 @@ fim     tela normal
     
     }
     .qrcode{
-        padding-top: 10%;
-        margin-top: 25%;
         padding-right: 10%;
         padding-left: 10%;
         background-color: rgb(255, 255, 255);
         text-align: center;
         align-items: center;
-        width: 50%;
+        width: 100%;
         float: left;
     }
     .imagem_qrcode{
         background-image: url(img/qrcodePequeno.png);
         background-repeat: no-repeat;
-        width: 50%;
-        height: 650px;
+        width: 85%;
+        height: 400px;
         align-items: center;
         float: right;
-        margin-top: 45%;
-        padding-right: 20%;
+        padding: 20%;
         background-color: rgb(255, 255, 255);
     
                 
+    }
+    .texto_sobre2{
+        margin-top: 80%;
+        margin-bottom: 100%;
     }
     
 
