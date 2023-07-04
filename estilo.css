@@ -873,24 +873,23 @@ fim     tela normal
 
     .imagem_Celular{
         background-image: url(img/celularAppPequena.png);
-        width: 50%;
+        width: 100%;
         float: right;
-        margin-top: 20%;
-        padding-top: 35%;
-        padding-right: 25%;
+        margin-left: 20%;
         
 
                 
     }
     .texto_sobre{
-        width: 50%;
+        width: 100%;
         float: left;
         padding-right: 3%;
         padding-left: 10%;
     
     }
     .qrcode{
-        margin-top: 15%;
+        padding-top: 10%;
+        margin-top: 25%;
         padding-right: 10%;
         padding-left: 10%;
         background-color: rgb(255, 255, 255);
@@ -904,8 +903,9 @@ fim     tela normal
         background-repeat: no-repeat;
         width: 50%;
         height: 650px;
+        align-items: center;
         float: right;
-        margin-top: 435%;
+        margin-top: 45%;
         padding-right: 20%;
         background-color: rgb(255, 255, 255);
     
