@@ -1,106 +1,33 @@
 
      
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
-
-
-
         <script src="./src/script.js" defer></script>
-        <section class="txt">
-    
-            <div class="swiper mySwiper container">
-              <div class="swiper-wrapper content">
-        
-                <div class="swiper-slide card">
-                  <div class="card-content">
-                    <div class="image">
-                      <img src="img/c1.jpeg" alt="">
-                    </div>
-                  </div>
+        <div class="carrossel">
+            <div class="container-slider">
+                <button id="prev-button"><img src="img/arrow.png" alt="prev-button"></button>
+                <div class="container-images">
+                    <img src="img/carrossel1.jpeg" alt="girl" class="slider on">
+                    <img src="img/carrossel2.jpeg" alt="girl" class="slider">
+                    <img src="img/carrossel3.jpeg" alt="girl" class="slider">
+                    <img src="img/carrossel4.jpeg" alt="girl" class="slider">
+                    <img src="img/carrossel5.jpeg" alt="girl" class="slider">
                 </div>
-    
-                <div class="swiper-slide card">
-                  <div class="card-content">
-                    <div class="image">
-                      <img src="img/c2.jpeg" alt="">
-                    </div>
-                  </div>
+                <button id="next-button"><img src="img/arrow.png" alt="next-button"></button>
+            </div>  
+        </div>
+
+        <aside class="carrossel">
+            <div class="container-slider">
+                <button id="prev-button"><img src="img/arrow.png" alt="prev-button"></button>
+                <div class="container-images">
+                    <img src="img/c1.jpeg" alt="girl" class="slider on">
+                    <img src="img/c2.jpeg" alt="girl" class="slider">
+                    <img src="img/c3.jpeg" alt="girl" class="slider">
+                    <img src="img/c4.jpeg" alt="girl" class="slider">
+                    <img src="img/c5.jpeg" alt="girl" class="slider">
+                    <img src="img/c6.jpeg" alt="girl" class="slider">
+                    <img src="img/c7.jpeg" alt="girl" class="slider">
+                    <img src="img/c8.jpeg" alt="girl" class="slider">
                 </div>
-    
-                <div class="swiper-slide card">
-                  <div class="card-content">
-                    <div class="image">
-                      <img src="img/c3.jpeg" alt="">
-                    </div>
-                  </div>
-                </div>
-    
-                <div class="swiper-slide card">
-                  <div class="card-content">
-                    <div class="image">
-                      <img src="img/c4.jpeg" alt="">
-                    </div>  
-                  </div>
-                </div>
-    
-                <div class="swiper-slide card">
-                  <div class="card-content">
-                    <div class="image">
-                      <img src="img/c5.jpeg" alt="">
-                    </div>      
-                  </div>
-                </div>
-    
-                <div class="swiper-slide card">
-                  <div class="card-content">
-                    <div class="image">
-                      <img src="img/c6.jpeg" alt="">
-                    </div>               
-                  </div>
-                </div>
-    
-                <div class="swiper-slide card">
-                  <div class="card-content">
-                    <div class="image">
-                      <img src="img/c7.jpeg" alt="">
-                    </div>               
-                  </div>
-                </div>
-    
-                <div class="swiper-slide card">
-                  <div class="card-content">
-                    <div class="image">
-                      <img src="img/c8.jpeg" alt="">
-                    </div>               
-                  </div>
-                </div>
-    
-    
-              </div>
-            </div>
-        
-            <div class="swiper-button-next"></div>
-              <div class="swiper-button-prev"></div>
-              <div class="swiper-pagination"></div>
-          </section>
-        
-          <!-- Swiper JS -->
-          <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-        
-          <!-- Initialize Swiper -->
-          <script>
-            var swiper = new Swiper(".mySwiper", {
-              slidesPerView: 3,
-              spaceBetween: 30,
-              slidesPerGroup: 3,
-              loop: true,
-              loopFillGroupWithBlank: true,
-              pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-              },
-              navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-              },
-            });
-          </script>
+                <button id="next-button"><img src="img/arrow.png" alt="next-button"></button>
+            </div>  
+    </aside>
