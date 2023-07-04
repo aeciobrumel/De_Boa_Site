@@ -519,7 +519,7 @@ fim     tela normal
 
 */
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1050px) {
     .navbar {
         background-image: url(img/logo-horizontalminima.png);
         background-repeat: no-repeat;
@@ -558,7 +558,7 @@ fim     tela normal
 }
 
 
-@media (max-width: 899px) {
+@media (max-width: 1010px) {
     footer { position: static;}
     .footer-container{padding: 10px;}
     .footer-container .footer-content-1,
@@ -611,7 +611,7 @@ fim     tela normal
 
 
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1002px) {
     .navbar {
         background-image: url(img/logo-horizontalminima.png);
         background-repeat: no-repeat;
@@ -626,27 +626,7 @@ fim     tela normal
 
 }
 
-@media only screen and (max-width: 791px) {
-    .imagem_Celular{
-        background-image: url(img/celularAppMedia.png);
-        background-repeat: no-repeat;
-        width: 50%;
-        height: 650px;
-        float: right;
-        margin-top: 5%;
-        padding-right: 20%;
-                
-    }
-
-
-}
-
-
-
-
-
-
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 978px) {
     #logo_header{
     
         height: 200px;
@@ -668,9 +648,8 @@ fim     tela normal
     
     .nav-menu {
         
-        position: fixed;
-        left: -100%;
-        top: 5rem;
+        position: absolute;
+        left: -150%;
         flex-direction: column;
         background-color: #fff;
         width: 100%;
@@ -686,10 +665,11 @@ fim     tela normal
     }
 
     .nav-item {
-        margin: 2.5rem 0;
+        margin: 1.5rem 0;
     }
 
     .hamburger {
+        float: inline-start;
         display: block;
         cursor: pointer;
     }
@@ -726,14 +706,11 @@ fim     tela normal
     
     }
 
+
 }
 
 
-
-
-
-
-@media only screen and (max-width: 751px) {
+@media only screen and (max-width: 951px) {
 
 
     .caixaslide{
@@ -756,9 +733,8 @@ fim     tela normal
     
     .nav-menu {
         
-        position: fixed;
-        left: -100%;
-        top: 5rem;
+        position: absolute;
+        left: -150%;
         flex-direction: column;
         background-color: #fff;
         width: 100%;
@@ -767,6 +743,7 @@ fim     tela normal
         transition: 0.3s;
         box-shadow:
             0 10px 27px rgba(0, 0, 0, 0.05);
+
     }
 
     .nav-menu.active {
@@ -774,7 +751,7 @@ fim     tela normal
     }
 
     .nav-item {
-        margin: 2.5rem 0;
+        margin: 1.5rem 0;
     }
 
     .hamburger {
@@ -803,23 +780,59 @@ fim     tela normal
         margin-top: 25%;
         padding-top: 20%;
         padding-right: 25%;
-        
+        margin-bottom: 10%;
 
                 
     }
     .texto_sobre{
         width: 57%;
         float: left;
-        padding-right: 3%;
+        padding-right: 10%;
         padding-left: 10%;
     
     }
 
 }
 
-@media only screen and (max-width: 608px) {
+
+@media only screen and (max-width: 947px) {
+    .texto_sobre{
+        width: 100%;
+        float: left;
+        padding-right: 10%;
+        padding-left: 10%;
+    
+    }
+    .imagem_Celular{
+        background-image: url(img/celularAppMedia.png);
+        background-repeat: no-repeat;
+        padding-top: 40%;
+        width: 5%;
+        height: 650px;
+        padding-left: 40%;
+        margin-left: 10%;
+                
+    }
+
+
+}
+
+
+
+
+
+
+@media only screen and (max-width: 768px) {
+    #logo_header{
+    
+        height: 200px;
+        border-bottom: #101010;
+        border-radius: 10px;
+        border-color: #101010;
+    }
     .navbar {
         background-image: url(img/logoAzulMedia.png);
+        margin: 5%;
         background-repeat: no-repeat;
         background-position: center;
         display: flex;
@@ -831,9 +844,9 @@ fim     tela normal
     
     .nav-menu {
         
-        position: fixed;
+        position: absolute;
         left: -100%;
-        top: 5rem;
+        top: 1rem;
         flex-direction: column;
         background-color: #fff;
         width: 100%;
@@ -849,7 +862,7 @@ fim     tela normal
     }
 
     .nav-item {
-        margin: 2.5rem 0;
+        margin: 0.8rem 0;
     }
 
     .hamburger {
@@ -873,45 +886,550 @@ fim     tela normal
 
     .imagem_Celular{
         background-image: url(img/celularAppPequena.png);
-        width: 100%;
+        width: 40%;
         float: right;
-        margin-left: 20%;
-        
+        margin-top: 10%;
+        padding-top: 10%;
+        padding-right: 30%;
 
                 
     }
     .texto_sobre{
         width: 100%;
         float: left;
-        padding-right: 3%;
+        padding-right: 10%;
+        padding-left: 10%;
+    
+    }
+
+}
+
+
+@media only screen and (max-width: 610px) {
+    #logo_header{
+    
+        height: 200px;
+        border-bottom: #101010;
+        border-radius: 10px;
+        border-color: #101010;
+    }
+    .navbar {
+        background-image: url(img/logoAzulMedia.png);
+        margin: 5%;
+        background-repeat: no-repeat;
+        background-position: center;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    
+    .nav-menu {
+        
+        position: absolute;
+        left: -100%;
+        top: 1rem;
+        flex-direction: column;
+        background-color: #fff;
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow:
+            0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-item {
+        margin: 0.8rem 0;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        -webkit-transform: translateY(8px) rotate(45deg);
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        -webkit-transform: translateY(-8px) rotate(-45deg);
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .imagem_Celular{
+        background-image: url(img/celularAppPequena.png);
+        width: 40%;
+        float: right;
+        margin-top: 10%;
+        padding-top: 10%;
+        padding-right: 35%;
+
+                
+    }
+    .texto_sobre{
+        width: 100%;
+        float: left;
+        padding-right: 10%;
+        padding-left: 10%;
+    
+    }
+
+}
+
+
+
+
+
+@media only screen and (max-width: 608px) {
+    .navbar {
+        background-image: url(img/logoAzulMedia.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    
+    .nav-menu {
+        
+        position: absolute;
+        left: -150%;
+        top: 1rem;
+        flex-direction: column;
+        background-color: #fff;
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow:
+            0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-item {
+        margin: 0.8rem 0;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        -webkit-transform: translateY(8px) rotate(45deg);
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        -webkit-transform: translateY(-8px) rotate(-45deg);
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .imagem_Celular{
+        background-image: url(img/celularAppMedia.png);
+        width: 40%;
+        float: right;
+        margin-top: 10%;
+        padding-top: 10%;
+        padding-right: 35%;
+
+                
+    }
+    .texto_sobre{
+        width: 100%;
+        float: left;
+        padding-right: 10%;
         padding-left: 10%;
     
     }
     .qrcode{
+        margin-top: 18%;
         padding-right: 10%;
         padding-left: 10%;
         background-color: rgb(255, 255, 255);
         text-align: center;
-        align-items: center;
         width: 100%;
         float: left;
+        height: 60%;
     }
     .imagem_qrcode{
-        background-image: url(img/qrcodePequeno.png);
+        background-image: url(img/qrcodeMedio.png);
         background-repeat: no-repeat;
         width: 85%;
-        height: 400px;
-        align-items: center;
-        float: right;
-        padding: 20%;
+        height: 600px;
+        float: inline-end;
         background-color: rgb(255, 255, 255);
-    
+        
                 
     }
     .texto_sobre2{
-        margin-top: 80%;
-        margin-bottom: 100%;
+        margin-top: 10%;
+        margin-bottom: 5%;
     }
     
+.carrossel{
+    padding-top: 8% ;
+}
+.container-slider {
+    display: flex;
+    width: 50%;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .container-images {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 900px;
+  }
+  
+  .slider {
+    opacity: 0;
+    transition: opacity .2s;
+    position: absolute;
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .on {
+    opacity: 1;
+  }
+  
+  #prev-button, #next-button {
+    width: 30px;
+    height: 30px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  
+  #prev-button img, #next-button img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  #prev-button {
+    transform: rotate(180deg);
+  }
+
+}
+
+
+@media only screen and (max-width: 510px) {
+    .navbar {
+        background-image: url(img/logoAzulMedia.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    
+    .nav-menu {
+        
+        position: absolute;
+        left: -150%;
+        top: 1rem;
+        flex-direction: column;
+        background-color: #fff;
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow:
+            0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-item {
+        margin: 0.8rem 0;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        -webkit-transform: translateY(8px) rotate(45deg);
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        -webkit-transform: translateY(-8px) rotate(-45deg);
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .imagem_Celular{
+        background-image: url(img/celularAppMedia.png);
+        width: 40%;
+        float: right;
+        margin-top: 10%;
+        padding-top: 10%;
+        padding-right: 35%;
+
+                
+    }
+    .texto_sobre{
+        width: 100%;
+        float: left;
+        padding-right: 10%;
+        padding-left: 10%;
+    
+    }
+    .qrcode{
+        margin-top: 18%;
+        padding-right: 8%;
+        padding-left: 8%;
+        background-color: rgb(255, 255, 255);
+        text-align: center;
+        width: 100%;
+        float: left;
+        height: 60%;
+    }
+    .imagem_qrcode{
+        background-image: url(img/qrcodeMedio.png);
+        background-repeat: no-repeat;
+        width: 90%;
+        height: 600px;
+        float: inline-end;
+        background-color: rgb(255, 255, 255);
+        
+                
+    }
+    .texto_sobre2{
+        margin-top: 25%;
+        margin-bottom: 10%;
+    }
+    
+.carrossel{
+    padding-top: 8% ;
+}
+.container-slider {
+    display: flex;
+    width: 50%;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .container-images {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 900px;
+  }
+  
+  .slider {
+    opacity: 0;
+    transition: opacity .2s;
+    position: absolute;
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .on {
+    opacity: 1;
+  }
+  
+  #prev-button, #next-button {
+    width: 30px;
+    height: 30px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  
+  #prev-button img, #next-button img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  #prev-button {
+    transform: rotate(180deg);
+  }
+
+}
+
+
+@media only screen and (max-width: 463px) {
+    .navbar {
+        background-image: url(img/logoAzulMedia.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    
+    .nav-menu {
+        
+        position: absolute;
+        left: -150%;
+        top: 1rem;
+        flex-direction: column;
+        background-color: #fff;
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow:
+            0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-item {
+        margin: 0.8rem 0;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        -webkit-transform: translateY(8px) rotate(45deg);
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        -webkit-transform: translateY(-8px) rotate(-45deg);
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .imagem_Celular{
+        background-image: url(img/celularAppMedia.png);
+        width: 40%;
+        float: right;
+        margin-top: 10%;
+        padding-top: 10%;
+        padding-right: 40%;
+
+                
+    }
+    .texto_sobre{
+        width: 100%;
+        float: left;
+        padding-right: 10%;
+        padding-left: 10%;
+    
+    }
+    .qrcode{
+        margin-top: 18%;
+        padding-right: 8%;
+        padding-left: 8%;
+        background-color: rgb(255, 255, 255);
+        text-align: center;
+        width: 100%;
+        float: left;
+        height: 60%;
+    }
+    .imagem_qrcode{
+        background-image: url(img/qrcodeMedio.png);
+        background-repeat: no-repeat;
+        width: 94%;
+        height: 600px;
+        float: inline-end;
+        background-color: rgb(255, 255, 255);
+        
+                
+    }
+    .texto_sobre2{
+        margin-top: 35%;
+        margin-bottom: 20%;
+    }
+    
+.carrossel{
+    padding-top: 8% ;
+}
+.container-slider {
+    display: flex;
+    width: 50%;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .container-images {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 900px;
+  }
+  
+  .slider {
+    opacity: 0;
+    transition: opacity .2s;
+    position: absolute;
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .on {
+    opacity: 1;
+  }
+  
+  #prev-button, #next-button {
+    width: 30px;
+    height: 30px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  
+  #prev-button img, #next-button img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  #prev-button {
+    transform: rotate(180deg);
+  }
 
 }
