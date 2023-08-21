@@ -223,10 +223,12 @@ section{
   }
   
   .swiper{
-    width: 1300px;
+    width: 100%;
   }
   
   .card{
+    height: 150px;
+
     position: relative;
     border-radius: 20px;
     margin: 20px 0;

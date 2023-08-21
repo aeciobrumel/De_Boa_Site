@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style/estiloCadastro.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+
+    <title>Document</title>
+
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <form>
+                <div class="left-side">
+                    <label for="titulo">Título:</label>
+                    <input type="text" id="titulo" name="titulo" required>
+                    
+                    <label for="texto">Texto:</label>
+                    <input type="text" id="texto" name="texto" required>
+                    
+                    <label for="narracao">Narração:</label>
+                    <textarea id="narracao" name="narracao" required></textarea>
+
+                    <div class="additional-settings">
+                        <h2>Configurações Adicionais</h2>
+                        <div class="settings-container">
+                            <div class="layout-settings">
+                                <h3>Layout do Cartão</h3>
+                                <label>
+                                    <input type="radio" name="layout" value="imagem"> Somente Imagem
+                                </label>
+                                <label>
+                                    <input type="radio" name="layout" value="texto"> Somente Texto
+                                </label>
+                                <label>
+                                    <input type="radio" name="layout" value="imagem-texto"> Imagem e Texto
+                                </label>
+                            </div>
+
+                            <div class="offset-settings">
+                                <h3>Tempo de Espera (Offset)</h3>
+                                <label for="texto-offset">Texto (segundos):</label>
+                                <input type="number" id="texto-offset" name="texto-offset" min="0" step="1">
+                                <label for="narração-offset">Narração (segundos):</label>
+                                <input type="number" id="narração-offset" name="narração-offset" min="0" step="1">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="right-side">
+
+
+                    <label for="imagem">Inserir Imagem:</label>
+                    <input type="file" id="imagem" name="imagem" accept="image/*">
+                    <img id="imagem-preview" src="#" alt="Preview da Imagem" style="display: none; max-width: 100%; margin-top: 10px;">
+                    
+                    <label for="audio">Inserir Áudio:</label>
+                    <input type="file" id="audio" name="audio" accept="audio/*">
+                </div>
+                <button type="submit">Cadastrar</button>
+            </form>
+        </div>
+    </div>
+
+        <script src="main.js"></script>
+    </body>
+
+    </html>
