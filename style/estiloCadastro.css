@@ -97,3 +97,6 @@ button:hover {
 #titulo, #texto, #narracao, #texto-offset, #narração-offset{
     background-color: #d5def3;
 }
+#texto-offset, #narração-offset{
+width: 19%;
+}
