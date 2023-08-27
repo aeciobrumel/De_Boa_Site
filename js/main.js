@@ -1,8 +1,14 @@
-const hamburger = document.querySelector(".hamburger");
+/*const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
 const navLink = document.querySelectorAll(".nav-link");
-const imagemInput = document.getElementById('imagem');
-const imagemPreview = document.getElementById('imagem-preview');
+*/
+const inputFile = document.querySelector('#imagem');
+const pictureImage = document.querySelector('.pictureImage');
+const pictureImageTXT= "Selecione uma imagem";
+pictureImage.innerHTML = pictureImageTXT;
+
+
+/*
 
 hamburger.addEventListener("click", mobileMenu);
 navLink.forEach(n => n.addEventListener("click", closeMenu));
@@ -22,14 +28,26 @@ function closeMenu() {
 }
 
 
+*/
+inputFile.addEventListener('change', function(e){
+    const inputTarget = e.target;
+    const file = inputTarget.files[0]
 
-imagemInput.addEventListener('change', function(event) {
-    const file = event.target.files[0];
-    if (file) {
-        imagemPreview.style.display = 'block';
-        imagemPreview.src = URL.createObjectURL(file);
-    } else {
-        imagemPreview.style.display = 'none';
-        imagemPreview.src = '#';
+    if(file){
+        const reader = new FileReader();
+
+        reader.addEventListener('load', function(e){
+            const readerTarget = e.target;
+
+            const img = document.createElement('img');
+            img.src = readerTarget.result;
+            img.classList.add('picture__Image');
+
+            pictureImage.innerHTML= "";
+            pictureImage.appendChild(img);
+        });
+      reader.readAsDataURL(file);
+    }else{
+        pictureImage.innerHTML = pictureImageTXT;
     }
 });

@@ -8,7 +8,34 @@ body {
     min-height: 100vh;
     background-color: #f0f0f0;
 }
+.picture{
+width: 400px;
+aspect-ratio: 16/9;
+background-color: #ddd;
+justify-content: center;
+align-items: center;
+display: flex;
+color: #aaa;
+border: 4px dashed #aaa;
+cursor: pointer;
+font-family: sans-serif;
+transition: color 300ms ease-in-out, background 300ms ease-in-out;
 
+}
+.picture__Image{
+    max-width: 100%;
+}
+.picture:hover{
+    color: #777;
+    background: #ccc;
+}
+.picture:active{
+
+}
+
+#imagem{
+    display: none;
+}
 .container {
     display: flex;
     justify-content: center;
