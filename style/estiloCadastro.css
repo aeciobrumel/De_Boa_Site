@@ -9,7 +9,7 @@ body {
     background-color: #f0f0f0;
 }
 .picture{
-width: 400px;
+width: 300px;
 aspect-ratio: 16/9;
 background-color: #ddd;
 justify-content: center;
@@ -36,6 +36,9 @@ transition: color 300ms ease-in-out, background 300ms ease-in-out;
 #imagem{
     display: none;
 }
+
+
+
 .container {
     display: flex;
     justify-content: center;
@@ -127,3 +130,4 @@ button:hover {
 #texto-offset, #narração-offset{
 width: 19%;
 }
+

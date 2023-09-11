@@ -93,6 +93,8 @@ function submitForm(e){
     document.getElementById('cardForm').reset();
     document.getElementById('imagem').reset();
     document.getElementById('audio').reset();
+    pictureImage.innerHTML= "";
+
 }
 
 //pegar volores dos imputs

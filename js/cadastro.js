@@ -1,7 +1,4 @@
-/*const hamburger = document.querySelector(".hamburger");
-const navMenu = document.querySelector(".nav-menu");
-const navLink = document.querySelectorAll(".nav-link");
-*/
+
 const inputFile = document.querySelector('#imagem');
 const pictureImage = document.querySelector('.pictureImage');
 const pictureImageTXT= "Selecione uma imagem";
