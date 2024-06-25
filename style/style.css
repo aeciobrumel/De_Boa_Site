@@ -33,6 +33,7 @@ body {
 }
 .texto-centralizado p {
   color: #36507d;
+  max-width: 600px;
 }
 
 header {
