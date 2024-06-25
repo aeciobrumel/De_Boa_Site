@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 body {
-  background-color: black;
+  background-color: white;
   padding: 0;
   margin: 0;
   font-family: "Poppins", sans-serif;
@@ -18,22 +18,25 @@ body {
   padding: 1.5rem;
 }
 .texto-logo {
-  color: aliceblue;
+  color: #36507d;
   font-size: 3rem;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-style: bold;
 }
 .texto-centralizado h1 {
-  color: #eb3437;
+  color: #36507d;
   font-size: 3rem;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-style: bold;
 }
+.texto-centralizado p {
+  color: #36507d;
+}
 
 header {
-  background: #eb3437;
+  background: #36507d;
 }
 
 .header {
@@ -85,8 +88,7 @@ area oculta em monitores
 }
 
 .logo {
-  width: 84px;
-  height: 74px;
+  height: 84px;
 }
 
 main {
@@ -113,7 +115,7 @@ main {
   width: 100%;
   background-color: #464646;
   color: white;
-  border-top: 0.25rem solid #eb3437;
+  border-top: 0.25rem solid#36507d;
   height: fit-content;
   display: flex;
   flex-direction: column;
@@ -128,7 +130,7 @@ main {
   margin-bottom: 1rem;
 }
 .box-text h1 {
-  color: #eb3437;
+  color: #36507d;
   padding: 0;
   margin: 0;
   margin-top: 1rem;
@@ -176,12 +178,12 @@ button {
   border: 1px solid rgb(255, 255, 255);
 }
 button:hover {
-  color: #eb3437;
-  border: 1px solid #eb3437;
+  color: #36507d;
+  border: 1px solid #36507d;
 }
 
 .banner {
-  background-color: #eb3437;
+  background-color: #36507d;
   color: #ffffff;
 }
 
@@ -210,7 +212,7 @@ button:hover {
 }
 
 footer {
-  background-color: #eb3437;
+  background-color: #36507d;
 }
 
 .footer {
@@ -222,19 +224,16 @@ footer {
   header nav {
     display: none;
   }
-
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
   .box-content-main {
     flex-direction: column;
   }
   .hero-img img {
     height: 22rem;
-  }
-  .div-button {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-  }
-  .section-content {
-    flex-direction: column;
     align-items: center;
     justify-content: center;
   }
@@ -264,7 +263,7 @@ footer {
   position: fixed;
   z-index: 50;
   inset: 0;
-  background-color: #eb3437;
+  background-color: #36507d;
   color: white;
 }
 
@@ -309,7 +308,7 @@ footer {
 }
 
 .menu-header__image {
-  width: 6rem;
+  width: rem;
   height: 6rem;
 }
 
@@ -343,6 +342,10 @@ footer {
   .menu-open {
     display: none;
   }
+  .header {
+    display: flex;
+    justify-content: space-around;
+  }
 }
 
 /* FOOTER STYLES */
@@ -350,7 +353,7 @@ footer {
 .footer {
   padding-block: 1rem;
   color: white;
-  background-color: #eb3437;
+  background-color: #36507d;
 }
 
 .footer-body {
