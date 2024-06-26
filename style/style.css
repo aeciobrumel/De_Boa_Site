@@ -89,7 +89,7 @@ area oculta em monitores
 }
 
 .logo {
-  height: 84px;
+  height: 64px;
 }
 
 main {
@@ -309,8 +309,8 @@ footer {
 }
 
 .menu-header__image {
-  width: rem;
-  height: 6rem;
+  width: 10rem;
+  height: 12rem;
 }
 
 .menu-header__title {

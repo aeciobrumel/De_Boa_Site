@@ -19,14 +19,14 @@
         <nav>
           <ul class="right-side">
             <li><a href="#inicio">Início</a></li>
-            <li><a href="">sobre</a></li>
+            <li><a href="#inicio">sobre</a></li>
             <li><a href="#baixe">Baixe o app</a></li>
           </ul>
         </nav>
       </div>
     </header>
 
-    <nav class="menu">
+    <nav class="menu" id="inicio">
       <div class="container menu-body">
         <div class="menu-close">
           <img class="menu-close__image" src="img/x.svg" alt="x" />
@@ -49,7 +49,7 @@
           <div class="texto-menu">
             <div class="texto-centralizado">
               <div>
-                <h1 id="inicio">Conheça nosso App</h1>
+                <h1 >Conheça nosso App</h1>
                 <p>
                   O "D'boa é um aplicativo voltado para sindrome do panico e ataques
                   de ansiedade  </p>
@@ -66,15 +66,15 @@
         <div class="container pontos-fortes">
           <div class="conteudo-banner">
             <img src="img/medico.svg" alt="loren" />
-            <span>indicado por psicólogos</span>
+            <span>Indicado por psicólogos</span>
           </div>
           <div class="conteudo-banner">
             <img src="img/semremedio.svg" alt="loren" />
-            <span>não medicamentoso</span>
+            <span>Não medicamentoso</span>
           </div>
           <div class="conteudo-banner">
             <img src="img/meditante.svg" alt="loren" />
-            <span>ajuda no bem estar</span>
+            <span>Ajuda no bem estar</span>
           </div>
         </div>
       </section>
@@ -107,7 +107,10 @@
 
 document.querySelector('.menu-close').addEventListener('click', () => {
     document.querySelector('.menu').classList.remove('menu--active');
+
+
 })
+
     </script>
   </body>
 </html>
