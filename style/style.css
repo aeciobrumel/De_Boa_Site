@@ -108,12 +108,17 @@ header nav li a:hover {
 .gray-box {
   background-color: #f8f8f8;
 }
-.execao {
+.wave-grey {
+  background-image: url(/img/wave_grey.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.wave-yellow-top {
   background-image: url(/img/wave-yellow-top.svg);
   background-repeat: no-repeat;
   background-size: cover;
 }
-.execao2 {
+.wave-yellow-bottom {
   background-image: url(/img/wave-yellow-bottom.svg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -175,11 +180,7 @@ main {
   flex-direction: column;
   justify-content: space-evenly;
 }
-.wave_grey_img {
-  position: absolute;
-  z-index: -2;
-  margin-bottom: 170px;
-}
+
 .box-text h1 {
   color: #36507d;
   padding: 0;
