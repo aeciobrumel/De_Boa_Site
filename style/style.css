@@ -84,6 +84,35 @@ header nav li a:hover {
   color: #999;
   text-decoration: none;
 }
+
+.texto-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #36507d;
+  font-size: 1.3rem;
+  word-spacing: 2px;
+  font-style: bold;
+}
+.img-card {
+  background-color: rgb(26, 95, 155);
+  display: flex;
+  justify-content: space-around;
+  background-color: #36507d;
+  border: 1px solid #36507d;
+}
+.img-card img {
+  width: 12rem;
+}
+.gray-box {
+  background-color: #f8f8f8;
+}
+.execao {
+  background-image: url(/img/wave2.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 /* 
 area oculta em monitores
 */
