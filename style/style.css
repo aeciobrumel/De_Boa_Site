@@ -109,7 +109,12 @@ header nav li a:hover {
   background-color: #f8f8f8;
 }
 .execao {
-  background-image: url(/img/wave2.svg);
+  background-image: url(/img/wave-yellow-top.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.execao2 {
+  background-image: url(/img/wave-yellow-bottom.svg);
   background-repeat: no-repeat;
   background-size: cover;
 }
