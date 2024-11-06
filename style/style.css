@@ -1,5 +1,28 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
+@keyframes animationleft {
+  from {
+    opacity: 0;
+    transform: translateX(-500px);
+  }
+  to {
+    left: 0;
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+@keyframes animationright {
+  from {
+    opacity: 0;
+    transform: translateX(500px);
+  }
+  to {
+    left: 0;
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
 body {
   background-color: #ffffff;
   padding: 0;
@@ -94,6 +117,9 @@ header nav li a:hover {
   font-size: 1.3rem;
   word-spacing: 2px;
   font-style: bold;
+
+  animation-name: animationleft;
+  animation-duration: 3s;
 }
 .img-card {
   background-color: rgb(26, 95, 155);
@@ -101,6 +127,9 @@ header nav li a:hover {
   justify-content: space-around;
   background-color: #36507d;
   border: 1px solid #36507d;
+
+  animation-name: animationright;
+  animation-duration: 3s;
 }
 .img-card img {
   width: 12rem;
