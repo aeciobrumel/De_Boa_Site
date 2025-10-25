@@ -7,12 +7,19 @@ type ImageItem = {
 
 type Props = {
   images: ImageItem[]
-  aspect?: 'video' | 'portrait' | 'square'
+  /**
+   * Altura máxima do carrossel. Use classes Tailwind (ex.: 'h-[50vh] md:h-[60vh]').
+   */
+  maxHeightClass?: string
   ariaLabel?: string
 }
 
 // A11y-friendly, responsive carousel without autoplay
-export function Carousel({ images, aspect = 'portrait', ariaLabel = 'Carrossel de imagens' }: Props) {
+export function Carousel({
+  images,
+  maxHeightClass = 'h-[50vh] md:h-[60vh]',
+  ariaLabel = 'Carrossel de imagens',
+}: Props) {
   const [index, setIndex] = useState(0)
   const trackRef = useRef<HTMLDivElement | null>(null)
   const regionRef = useRef<HTMLDivElement | null>(null)
@@ -70,9 +77,6 @@ export function Carousel({ images, aspect = 'portrait', ariaLabel = 'Carrossel d
     }
   }, [index])
 
-  const aspectClass =
-    aspect === 'video' ? 'aspect-video' : aspect === 'square' ? 'aspect-square' : 'aspect-[9/16]'
-
   return (
     <div
       ref={regionRef}
@@ -82,7 +86,7 @@ export function Carousel({ images, aspect = 'portrait', ariaLabel = 'Carrossel d
       tabIndex={0}
       className="group relative mx-auto w-full max-w-5xl"
     >
-      <div className={`${aspectClass} w-full overflow-hidden rounded-xl bg-black`}>
+      <div className={`${maxHeightClass} w-full overflow-hidden rounded-xl bg-black`}>
         <div
           ref={trackRef}
           className="flex h-full w-full transition-transform duration-300 ease-out"
@@ -94,7 +98,7 @@ export function Carousel({ images, aspect = 'portrait', ariaLabel = 'Carrossel d
                 src={img.src}
                 alt={img.alt}
                 loading={i === index ? 'eager' : 'lazy'}
-                className="h-full w-full object-contain"
+                className="mx-auto h-full w-auto max-w-full object-contain"
               />
             </figure>
           ))}
@@ -138,4 +142,3 @@ export function Carousel({ images, aspect = 'portrait', ariaLabel = 'Carrossel d
     </div>
   )
 }
-

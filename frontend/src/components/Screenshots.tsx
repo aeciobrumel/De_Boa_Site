@@ -16,9 +16,12 @@ export function Screenshots() {
         <h2 id="screenshots-title" className="mb-6 text-2xl font-bold">
           Imagens do app
         </h2>
-        <Carousel images={screenshots} aspect="portrait" ariaLabel="Galeria de imagens do app" />
+        <Carousel
+          images={screenshots}
+          maxHeightClass="h-[45vh] sm:h-[50vh] md:h-[60vh]"
+          ariaLabel="Galeria de imagens do app"
+        />
       </div>
     </section>
   )
 }
-

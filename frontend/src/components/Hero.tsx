@@ -33,7 +33,7 @@ export function Hero() {
           <img
             src="/img/celularApp.png"
             alt="Prévia do app Dboa no celular"
-            className="h-80 w-auto rounded-xl"
+            className="h-56 w-auto rounded-xl sm:h-64 md:h-72 lg:h-80 max-w-full"
             loading="eager"
           />
         </div>
@@ -41,4 +41,3 @@ export function Hero() {
     </section>
   )
 }
-
