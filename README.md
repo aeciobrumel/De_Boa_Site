@@ -56,12 +56,14 @@ Opção Dev (hot reload):
 - Acesse `http://localhost:5173`
 
 Opção Produção (build e servir via Nginx):
+- Garanta que os assets foram copiados para `frontend/public/img` antes do build.
 - `docker compose up --build frontend-prod`
 - Acesse `http://localhost:8080`
 
 Notas:
 - O serviço `frontend-dev` monta a pasta `frontend/` como volume (salvou → recarregou).
 - Se os assets de imagens não aparecerem, copie-os para `frontend/public/img` (ver comandos acima).
+- Portas: dev em 5173, prod em 8080 (ajuste em `docker-compose.yml` se necessário).
 
 Versão estática (legado):
 - Abrir `index.html` direto no navegador, ou servir via `python3 -m http.server 8080`.
@@ -82,7 +84,7 @@ Site em produção: domínio via `CNAME` (`dboa.com.br`).
   - Primária `#36507D`
   - Secundárias `#A6B3C8`, `#B4B1C6`
   - Acento `#F8DBD8`
-- Tokens: ver `:root` em `style/style.css` (modo escuro padrão).
+- Tema: claro por padrão (dark mode desabilitado no app React).
 - Alvos mínimos de toque: 44×44 px (ver `.btn`, `.menu-open`, `.menu-close`).
 
 ### Conteúdo dinâmico (React)
@@ -90,6 +92,13 @@ Site em produção: domínio via `CNAME` (`dboa.com.br`).
   - `ANDROID_URL` — link do Play Store/APK. Padrão: `https://play.google.com/store/apps/details?id=com.dboa.dboa`. TODO: substitua por {{ANDROID_URL}} real.
   - `YOUTUBE_URL` — URL do vídeo. Padrão: `https://www.youtube.com/watch?v=iBRxq5Pqt_k`. TODO: substitua por {{YOUTUBE_URL}} real.
   - `YOUTUBE_ID` — extraído automaticamente de `YOUTUBE_URL`.
+
+### Seções e componentes (React)
+- Header / Hero (CTA “Baixar para Android”).
+- Highlights (ícones SVG personalizados).
+- VideoSection (youtube-nocookie, link alternativo).
+- Screenshots (carrossel + texto de benefícios, layout 2 colunas no desktop, bg cinza suave).
+- Features, Privacy, CTA final, Footer.
 
 ### SEO/Performance/A11y
 - SEO: `title`, `description`, OG/Twitter, `canonical` e `theme-color` presentes em `index.html`.
