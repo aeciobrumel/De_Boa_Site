@@ -11,7 +11,7 @@ const screenshots = [
 
 export function Screenshots() {
   return (
-    <section aria-labelledby="screenshots-title" className="py-12">
+    <section aria-labelledby="screenshots-title" className="bg-gray-50 py-12">
       <div className="mx-auto grid max-w-5xl grid-cols-1 items-center gap-8 px-6 md:grid-cols-2">
         <div>
           <h2 id="screenshots-title" className="mb-4 text-2xl font-bold">
