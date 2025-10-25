@@ -4,85 +4,116 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style/style.css" ] />
-    <title>Dboa</title>
+    <title>Cartões de Enfrentamento — Dboa</title>
+    <meta name="description" content="Ajuda prática e acolhedora para momentos de ansiedade. Respiração guiada, narração com música, vibração, modo offline e mais." />
+    <meta name="theme-color" content="#36507D" />
+    <link rel="canonical" href="https://dboa.com.br/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Cartões de Enfrentamento — Dboa" />
+    <meta property="og:description" content="Ajuda prática e acolhedora para momentos de ansiedade." />
+    <meta property="og:url" content="https://dboa.com.br/" />
+    <meta property="og:image" content="https://dboa.com.br/img/celularApp.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Cartões de Enfrentamento — Dboa" />
+    <meta name="twitter:description" content="Ajuda prática e acolhedora para momentos de ansiedade." />
+    <meta name="twitter:image" content="https://dboa.com.br/img/celularApp.png" />
+    <link rel="stylesheet" href="style/style.css" />
+    <script src="js/i18n.js" defer></script>
+    <script src="js/script.js" defer></script>
   </head>
   <body>
+    <a class="skip-link" href="#main">Pular para o conteúdo</a>
     <header>
       <div class="container header">
         <div class="texto-logo"></div>
-        <img src="./img/logo-horizontal-white.png" alt="logo" class="logo" />
-        <img class="menu-open" src="img/list.svg" alt="hamburguer" />
-        <nav>
+        <img src="./img/logo-horizontal-white.png" alt="Dboa — Cartões de Enfrentamento" class="logo" />
+        <button class="menu-open" aria-controls="menu" aria-expanded="false" aria-label="Abrir menu">
+          <img src="img/list.svg" alt="" aria-hidden="true" />
+        </button>
+        <nav aria-label="Menu principal">
           <ul class="right-side">
-            <li><a href="#inicio">Início</a></li>
-            <li><a href="#inicio">sobre</a></li>
-            <li><a href="#baixe">Baixe o app</a></li>
+            <li><a class="nav-link" href="#inicio">Início</a></li>
+            <li><a class="nav-link" href="#video">Sobre</a></li>
+            <li><a class="nav-link" href="#download">Baixe o app</a></li>
           </ul>
         </nav>
       </div>
     </header>
-    <nav class="menu" id="inicio">
+    <nav class="menu" id="menu">
       <div class="container menu-body">
-        <div class="menu-close">
-          <img class="menu-close__image" src="img/x.svg" alt="x" />
+        <button class="menu-close" type="button" aria-label="Fechar menu">
+          <img class="menu-close__image" src="img/x.svg" alt="" aria-hidden="true" />
           <span class="menu-close__text">Fechar</span>
-        </div>
+        </button>
         <div class="menu-header">
-          <img class="menu-header__image" src="img/logo-white.png" alt="logo" />
+          <img class="menu-header__image" src="img/logo-white.png" alt="Logomarca Dboa" />
         </div>
-        <ul class="menu-list">
-          <li><a class="menu-list__link" href="#inicio">Início</a></li>
-          <li><a class="menu-list__link" href="#baixe">sobre</a></li>
-          <li><a class="menu-list__link" href="https://play.google.com/store/apps/details?id=com.dboa.dboa">Baixe o app</a></li>
+        <ul class="menu-list" role="menu">
+          <li role="none"><a role="menuitem" class="menu-list__link" href="#inicio">Início</a></li>
+          <li role="none"><a role="menuitem" class="menu-list__link" href="#video">Sobre</a></li>
+          <li role="none"><a role="menuitem" class="menu-list__link" href="#download">Baixe o app</a></li>
         </ul>
       </div>
     </nav>
-    <main>
-      <section>
+    <main id="main" tabindex="-1">
+      <section id="inicio" class="hero">
         <div class="box-content-main container">
           <div class="texto-menu">
             <div class="texto-centralizado">
               <div>
-                <h1 >Conheça nosso App</h1>
-                <p>
-                  Passar por crises de ansiedade sem algum suporte é algo desafiador, nós queremos te ajudar nesse momento.
-                use o dboa, para te auxiliar durante uma crise e te ajudar a lidar com isso de uma forma mais confortável  
-                </p>
-                </div>
+                <h1 data-i18n="app.title">Cartões de Enfrentamento</h1>
+                <p data-i18n="app.subtitle">Ajuda prática e acolhedora para momentos de ansiedade.</p>
+              </div>
+              <div class="hero-cta">
+                <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.dboa.dboa" target="_blank" rel="noopener noreferrer" data-i18n="cta.primary">Baixar para Android</a>
+                <a class="btn btn-secondary" href="#video" data-i18n="cta.secondary">Saiba mais</a>
+              </div>
             </div>
           </div>
           <div class="hero-img">
-            <img src="img/celularApp.png" alt="" />
+            <img src="img/celularApp.png" alt="Prévia do app Dboa no celular" width="512" height="512" />
           </div>
         </div>
       </section>
-      <section class="banner">
+      <section class="banner" aria-label="Destaques">
         <div class="container pontos-fortes">
           <div class="conteudo-banner">
-            <img src="img/medico.svg" alt="loren" />
+            <img src="img/medico.svg" alt="Ícone de médico" loading="lazy" />
             <span>Indicado por psicólogos</span>
           </div>
           <div class="conteudo-banner">
-            <img src="img/semremedio.svg" alt="loren" />
+            <img src="img/semremedio.svg" alt="Ícone de sem remédio" loading="lazy" />
             <span>Não medicamentoso</span>
           </div>
           <div class="conteudo-banner">
-            <img src="img/meditante.svg" alt="loren" />
+            <img src="img/meditante.svg" alt="Pessoa meditando" loading="lazy" />
             <span>Ajuda no bem estar</span>
           </div>
         </div>
       </section>
-      <section>
-          <div class="conteudo-corpo">
+      <section aria-labelledby="video-title">
+          <div class="conteudo-corpo" id="video">
               <div class="texto-espacamento container">
-                  <p>&nbsp;&nbsp;&nbsp;Uma das principais funcionalidades do aplicativo é te ajudar a passar por uma crise. Nessa funcionalidade, um conjunto de cards é exibido com tecnicas de relaxamento e cards criados por você... Respire, escute a música e acompanhe os cartões. Ficaremos juntos até isso passar! </p>
+                  <p>&nbsp;&nbsp;&nbsp;Uma das principais funcionalidades do aplicativo é te ajudar a passar por uma crise. Nessa funcionalidade, um conjunto de cards é exibido com técnicas de relaxamento e cards criados por você. Respire, escute a música e acompanhe os cartões. Ficaremos juntos até isso passar!</p>
               </div>
-                <div class="video ">
-                  <div class="video-area container">
-                    <iframe src="https://www.youtube.com/embed/iBRxq5Pqt_k?si=RvMmjvl-n1I6yNcg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>  
+              <div class="video">
+                <div class="container">
+                  <div class="video-embed">
+                    <!-- TODO: substitua {{VIDEO_ID}} se necessário -->
+                    <iframe
+                      src="https://www.youtube-nocookie.com/embed/iBRxq5Pqt_k?rel=0"
+                      title="Demonstração do aplicativo Cartões de Enfrentamento"
+                      loading="lazy"
+                      referrerpolicy="strict-origin-when-cross-origin"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      allowfullscreen
+                    ></iframe>
                   </div>
+                  <p class="video-alt">
+                    <a href="https://www.youtube.com/watch?v=iBRxq5Pqt_k" target="_blank" rel="noopener noreferrer" data-i18n="video.altLink">Assistir no YouTube</a>
+                  </p>
                 </div>
+              </div>
           </div>
           <div class="wave-yellow-bottom">
             <div class="container box-content-main ">
@@ -90,7 +121,7 @@
                 <p>O app inicia com duas opções, configurar (onde você cria seus cards) e iniciar, para começar o app</p>
               </div>
               <div class="img-card ">
-                <img src="/img/img-inicial.jpeg" alt="">
+                <img src="/img/img-inicial.jpeg" alt="Tela inicial do aplicativo" loading="lazy">
               </div>
             </div>
           </div>
@@ -98,7 +129,7 @@
           <div class="gray-box wave-yellow-top">
             <div class="container box-content-main">
               <div class="img-card ">
-                <img src="/img/img-menu.jpeg" alt="">
+                <img src="/img/img-menu.jpeg" alt="Tela de menu do aplicativo" loading="lazy">
               </div>
               <div class="texto-card texto-centralizado">
                 <p>Ao clicar em configurar, você pode escolher editar ou criar novos cartões </p>
@@ -111,14 +142,14 @@
                 <p>Você pode visualizar seus cartões existente e edita-los ou criar um novo para seu deck</p>
               </div>
               <div class="img-card ">
-                <img src="/img/img-deck.jpeg" alt="">
+                <img src="/img/img-deck.jpeg" alt="Tela de deck de cartões" loading="lazy">
               </div>
             </div>
           </div>
           <div class="gray-box">
             <div class="container box-content-main">
               <div class="img-card ">
-                <img src="/img/img-edit.jpeg" alt="">
+                <img src="/img/img-edit.jpeg" alt="Tela de edição de cartão" loading="lazy">
               </div>
               <div class="texto-card texto-centralizado">
                 <p>No Editar você edita um cartão existente ou cria um Novo para seu deck</p>
@@ -131,33 +162,69 @@
                 <p>Começamos o app te guiando com uma respiração guiada, te ajudando a aliviar a tensão e relaxar um pouco</p>
               </div>
               <div class="img-card">
-                <img src="/img/img-respira.jpeg" alt="">
+                <img src="/img/img-respira.jpeg" alt="Tela de respiração guiada" loading="lazy">
               </div>
             </div>
           </div>
 
-          <div class="wave-grey  gray-box">
+          <div class="wave-grey  gray-box" aria-label="Exemplo de cartão narrado">
             <div class="container box-content-main">
               <div class="img-card ">
-                <img src="/img/img-card.jpeg" alt="">
+                <img src="/img/img-card.jpeg" alt="Exemplo de cartão narrado" loading="lazy">
               </div>
               <div class="texto-card texto-centralizado">
                 <p>Ao iniciar os cards Você pode clicar no icone de som, e seu cartão será narrado para melhor experiência</p>
               </div>
             </div>
           </div>
+          <section aria-labelledby="recursos-title" class="recursos">
+            <div class="container">
+              <h2 id="recursos-title" data-i18n="resources.title">Recursos do app</h2>
+              <ul class="recursos-grid" role="list">
+                <li class="recurso" role="listitem">
+                  <svg class="recurso-icon" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 1 0 10 10A10.011 10.011 0 0 0 12 2Zm1 14h-2v-2h2Zm0-4h-2V6h2Z"/></svg>
+                  <span>Respiração guiada</span>
+                </li>
+                <li class="recurso" role="listitem">
+                  <svg class="recurso-icon" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M3 11h18v2H3zM7 5h10v2H7zm0 12h10v2H7z"/></svg>
+                  <span>Técnica 5-4-3-2-1</span>
+                </li>
+                <li class="recurso" role="listitem">
+                  <svg class="recurso-icon" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 17a5 5 0 1 1 5-5a5.006 5.006 0 0 1-5 5m0-14a9 9 0 1 0 9 9a9.01 9.01 0 0 0-9-9"/></svg>
+                  <span>Afirmações</span>
+                </li>
+                <li class="recurso" role="listitem">
+                  <svg class="recurso-icon" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 3l4 4H8zm0 18l-4-4h8zM3 12l4-4v8zM21 12l-4 4V8z"/></svg>
+                  <span>Narração + música</span>
+                </li>
+                <li class="recurso" role="listitem">
+                  <svg class="recurso-icon" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M7 2h10v2H7zm-2 4h14v2H5zm-2 4h18v2H3zm2 4h14v2H5zm2 4h10v2H7z"/></svg>
+                  <span>Vibração/Haptics</span>
+                </li>
+                <li class="recurso" role="listitem">
+                  <svg class="recurso-icon" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4 5h16v14H4zM2 3v18h20V3zm6 4h8v10H8z"/></svg>
+                  <span>Modo offline</span>
+                </li>
+                <li class="recurso" role="listitem">
+                  <svg class="recurso-icon" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 4a8 8 0 0 0-8 8h2a6 6 0 1 1 6 6v2a8 8 0 0 0 0-16z"/></svg>
+                  <span>Acessibilidade</span>
+                </li>
+              </ul>
+            </div>
+          </section>
           
       </section>
-      <section>
-        <div class="wav "> 
-          <div class="box-text ">
-            <h1 id="baixe">Baixe agora</h1>
-            <a href="https://play.google.com/store/apps/details?id=com.dboa.dboa">
-            <img src="./img/googleplay.png" alt="" target="_blank" id="googleplay">
-            </a> 
+      <section id="download" aria-labelledby="cta-final-title" class="cta-final">
+        <div class="container">
+          <h2 id="cta-final-title">Pronto para respirar melhor?</h2>
+          <p class="cta-final-text">Baixe e tenha suporte prático sempre à mão.</p>
+          <div class="cta-actions">
+            <!-- TODO: substitua {{ANDROID_URL}} se necessário -->
+            <a class="btn btn-primary btn-lg" href="https://play.google.com/store/apps/details?id=com.dboa.dboa" target="_blank" rel="noopener noreferrer" data-i18n="cta.primary">Baixar para Android</a>
           </div>
+          <p class="privacy-note">Este app não substitui acompanhamento médico/psicológico. Use de forma responsável.</p>
         </div>
-       </section>
+      </section>
     </main>
     <footer class="footer">
       <div class="container footer-body">
@@ -165,17 +232,5 @@
         </div>
       </div>
     </footer>
-    <script>
-      document.querySelector('.menu-open').addEventListener('click', () => {
-    document.querySelector('.menu').classList.add('menu--active');
-})
-
-document.querySelector('.menu-close').addEventListener('click', () => {
-    document.querySelector('.menu').classList.remove('menu--active');
-
-
-})
-
-    </script>
   </body>
 </html>
