@@ -10,7 +10,7 @@ export function Header() {
             loading="eager"
           />
         </div>
-        <nav aria-label="Menu principal" className="hidden sm:block">
+        <nav aria-label="Menu principal" className="hidden sm:block text-white">
           <ul className="flex gap-6">
             <li>
               <a href="#inicio" className="tap-target inline-flex items-center hover:opacity-90">
