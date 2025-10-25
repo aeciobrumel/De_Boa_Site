@@ -7,6 +7,7 @@ import { Features } from './components/Features'
 import { Privacy } from './components/Privacy'
 import { CtaDownload } from './components/CtaDownload'
 import { SkipToContent } from './components/SkipToContent'
+import { Screenshots } from './components/Screenshots'
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Hero />
         <Highlights />
         <VideoSection />
+        <Screenshots />
         <Features />
         <Privacy />
         <CtaDownload />
@@ -27,4 +29,3 @@ function App() {
 }
 
 export default App
-

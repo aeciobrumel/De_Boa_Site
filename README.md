@@ -37,6 +37,13 @@ Passo a passo rápido:
 - Copie os assets essenciais (ou ajuste os caminhos nos componentes):
   - `cp ../img/logo-horizontal-white.png public/img/`
   - `cp ../img/celularApp.png public/img/`
+  - Carrossel (opcional, recomendado):
+    - `cp ../img/img-inicial.jpeg public/img/`
+    - `cp ../img/img-menu.jpeg public/img/`
+    - `cp ../img/img-deck.jpeg public/img/`
+    - `cp ../img/img-edit.jpeg public/img/`
+    - `cp ../img/img-respira.jpeg public/img/`
+    - `cp ../img/img-card.jpeg public/img/`
 - Inicie em modo dev: `npm run dev` (geralmente em `http://localhost:5173`)
 
 Build e preview de produção:
