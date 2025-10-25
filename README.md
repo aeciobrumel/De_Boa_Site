@@ -50,6 +50,19 @@ Build e preview de produção:
 - `npm run build`
 - `npm run preview` (geralmente em `http://localhost:4173`)
 
+## Rodando com Docker
+Opção Dev (hot reload):
+- `docker compose up frontend-dev`
+- Acesse `http://localhost:5173`
+
+Opção Produção (build e servir via Nginx):
+- `docker compose up --build frontend-prod`
+- Acesse `http://localhost:8080`
+
+Notas:
+- O serviço `frontend-dev` monta a pasta `frontend/` como volume (salvou → recarregou).
+- Se os assets de imagens não aparecerem, copie-os para `frontend/public/img` (ver comandos acima).
+
 Versão estática (legado):
 - Abrir `index.html` direto no navegador, ou servir via `python3 -m http.server 8080`.
 

@@ -1,0 +1,30 @@
+version: "3.9"
+
+services:
+  frontend-dev:
+    build:
+      context: ./frontend
+      target: dev
+    image: dboa-frontend-dev
+    container_name: dboa-frontend-dev
+    working_dir: /app
+    ports:
+      - "5173:5173"
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
+    environment:
+      - NODE_ENV=development
+    command: ["npm", "run", "dev", "--", "--host", "0.0.0.0"]
+
+  frontend-prod:
+    build:
+      context: ./frontend
+      target: prod
+    image: dboa-frontend-prod
+    container_name: dboa-frontend-prod
+    ports:
+      - "8080:80"
+    environment:
+      - NODE_ENV=production
+
