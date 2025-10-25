@@ -80,6 +80,9 @@ export function Carousel({
     }
   }, [index])
 
+  const prevIndex = (index - 1 + images.length) % images.length
+  const nextIndex = (index + 1) % images.length
+
   return (
     <div
       ref={regionRef}
@@ -89,22 +92,44 @@ export function Carousel({
       tabIndex={0}
       className="group relative mx-auto w-full max-w-5xl"
     >
-      <div className={`${maxHeightClass} w-full overflow-hidden rounded-xl ${containerClass}`}>
-        <div
-          ref={trackRef}
-          className="flex h-full w-full transition-transform duration-300 ease-out"
-          style={{ transform: `translateX(-${index * 100}%)` }}
-        >
-          {images.map((img, i) => (
-            <figure key={img.src + i} className="relative h-full w-full shrink-0">
-              <img
-                src={img.src}
-                alt={img.alt}
-                loading={i === index ? 'eager' : 'lazy'}
-                className="mx-auto h-full w-auto max-w-full object-contain"
-              />
-            </figure>
-          ))}
+      {/* Blurred previews on sides (decorative) */}
+      {images.length > 1 && (
+        <>
+          <img
+            aria-hidden
+            src={images[prevIndex]?.src}
+            className="pointer-events-none absolute inset-y-0 left-0 hidden w-1/4 scale-110 object-cover opacity-40 blur-md sm:block"
+          />
+          <img
+            aria-hidden
+            src={images[nextIndex]?.src}
+            className="pointer-events-none absolute inset-y-0 right-0 hidden w-1/4 scale-110 object-cover opacity-40 blur-md sm:block"
+          />
+          {/* Edge fades to blend */}
+          <div className="pointer-events-none absolute inset-y-0 left-0 hidden w-16 bg-gradient-to-r from-white to-transparent sm:block" />
+          <div className="pointer-events-none absolute inset-y-0 right-0 hidden w-16 bg-gradient-to-l from-white to-transparent sm:block" />
+        </>
+      )}
+
+      {/* Centered window to create gutters for previews */}
+      <div className="relative z-10 flex justify-center">
+        <div className={`${maxHeightClass} w-4/5 sm:w-3/4 md:w-2/3 overflow-hidden rounded-xl ${containerClass}`}>
+          <div
+            ref={trackRef}
+            className="flex h-full w-full transition-transform duration-300 ease-out"
+            style={{ transform: `translateX(-${index * 100}%)` }}
+          >
+            {images.map((img, i) => (
+              <figure key={img.src + i} className="relative h-full w-full shrink-0">
+                <img
+                  src={img.src}
+                  alt={img.alt}
+                  loading={i === index ? 'eager' : 'lazy'}
+                  className="mx-auto h-full w-auto max-w-full object-contain"
+                />
+              </figure>
+            ))}
+          </div>
         </div>
       </div>
 
@@ -113,7 +138,7 @@ export function Carousel({
         type="button"
         aria-label="Anterior"
         onClick={prev}
-        className="tap-target absolute left-2 top-1/2 -translate-y-1/2 rounded-full bg-black/50 p-3 text-white hover:bg-black/70"
+        className="tap-target absolute left-2 top-1/2 z-20 -translate-y-1/2 rounded-full bg-black/50 p-3 text-white hover:bg-black/70"
       >
         ‹
       </button>
@@ -121,7 +146,7 @@ export function Carousel({
         type="button"
         aria-label="Próximo"
         onClick={next}
-        className="tap-target absolute right-2 top-1/2 -translate-y-1/2 rounded-full bg-black/50 p-3 text-white hover:bg-black/70"
+        className="tap-target absolute right-2 top-1/2 z-20 -translate-y-1/2 rounded-full bg-black/50 p-3 text-white hover:bg-black/70"
       >
         ›
       </button>
