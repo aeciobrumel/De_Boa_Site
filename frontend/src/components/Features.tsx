@@ -18,7 +18,7 @@ export function Features() {
           {features.map(({ title, icon: Icon }) => (
             <li
               key={title}
-              className="flex items-center gap-3 rounded-xl border border-white/10 bg-surface p-4"
+              className="flex items-center gap-3 rounded-xl border border-gray-200 bg-white p-4"
             >
               <Icon className="h-6 w-6 text-secondary1" aria-hidden />
               <span>{title}</span>
@@ -79,4 +79,3 @@ function A11yIcon(props: React.SVGProps<SVGSVGElement>) {
     </svg>
   )
 }
-

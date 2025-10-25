@@ -21,7 +21,7 @@ Site estático (legado):
 - `index.html`, `style/style.css`, `js/*.js`, `img/` — versão anterior preservada.
 
 App React (novo) em `frontend/`:
-- `index.html` — metadados básicos + fonte Inter + modo escuro padrão.
+- `index.html` — metadados básicos + fonte Inter.
 - `src/main.tsx` e `src/App.tsx` — montagem e layout principal.
 - `src/components/` — componentes: `Header`, `Hero`, `VideoSection`, `Highlights`, `Features`, `Privacy`, `CtaDownload`, `Footer`, `SkipToContent`.
 - `src/config.ts` — define `ANDROID_URL`, `YOUTUBE_URL` e extrai `YOUTUBE_ID`.

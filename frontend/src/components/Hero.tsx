@@ -2,12 +2,12 @@ import { ANDROID_URL } from '../config'
 
 export function Hero() {
   return (
-    <section id="inicio" className="bg-bg py-12">
+    <section id="inicio" className="bg-white py-12">
       <div className="mx-auto grid max-w-5xl grid-cols-1 items-center gap-8 px-6 md:grid-cols-2">
         <div className="space-y-6">
           <header className="space-y-3">
             <h1 className="text-3xl font-bold leading-tight md:text-4xl">Cartões de Enfrentamento</h1>
-            <p className="text-lg text-secondary1/90">
+            <p className="text-lg text-slate-600">
               Ajuda prática e acolhedora para momentos de ansiedade.
             </p>
           </header>

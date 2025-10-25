@@ -11,7 +11,7 @@ import { Screenshots } from './components/Screenshots'
 
 function App() {
   return (
-    <div className="min-h-screen bg-bg text-white">
+    <div className="min-h-screen bg-white text-slate-900">
       <SkipToContent />
       <Header />
       <main id="main-content" tabIndex={-1} className="focus:outline-none">

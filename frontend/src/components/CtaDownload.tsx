@@ -2,7 +2,7 @@ import { ANDROID_URL } from '../config'
 
 export function CtaDownload() {
   return (
-    <section id="download" className="bg-surface py-12">
+    <section id="download" className="bg-gray-50 py-12">
       <div className="mx-auto max-w-5xl px-6 text-center">
         <h2 className="text-2xl font-bold">Pronto para respirar melhor?</h2>
         <p className="mt-2 text-secondary1/90">Baixe e tenha suporte prático sempre à mão.</p>
@@ -21,4 +21,3 @@ export function CtaDownload() {
     </section>
   )
 }
-
