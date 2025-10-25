@@ -110,16 +110,6 @@ Site em produção: domínio via `CNAME` (`dboa.com.br`).
   - Navegação overlay com ARIA e botão de fechar.
   - Estrutura semântica de headings.
 
-## Parâmetros de Conteúdo
-- Android: `{{ANDROID_URL}}` — ver `frontend/src/config.ts`.
-- YouTube: `{{YOUTUBE_URL}}`/`{{VIDEO_ID}}` — ver `frontend/src/config.ts`.
-
-## Checklist de validação
-- Tab → “Pular para o conteúdo” → foco no main → Tab → foco no botão “Baixar para Android” (Hero).
-- Vídeo `youtube-nocookie`, responsivo 16:9, `title` correto e link “Assistir no YouTube”.
-- Contraste AA/AAA; alvos 44×44; foco visível.
-- Build `npm run build` e `npm run preview` funcionam em `frontend/`.
-
 ## Como contribuir
 - Crie uma branch a partir de `main` (ex.: `feat/...` ou `fix/...`).
 - Commits seguindo Conventional Commits.
