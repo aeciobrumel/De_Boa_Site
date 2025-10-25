@@ -477,6 +477,12 @@ footer { background-color: var(--color-primary); }
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
+  background: transparent;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+  min-width: 44px;
+  min-height: 44px;
 }
 
 .menu-close__image {
