@@ -1,6 +1,8 @@
 # Dboa — Cartões de Enfrentamento (Landing Page)
 
-Landing Page estática para divulgar o aplicativo “Cartões de Enfrentamento (Dboa)”.
+Landing Page do app “Cartões de Enfrentamento (Dboa)”. O repositório agora contém:
+- Site original estático em HTML/CSS (raiz) — preservado.
+- Nova implementação em React + TypeScript + Tailwind (pasta `frontend/`).
 
 ## Visão Geral
 - Foco em clareza e acesso rápido ao CTA “Baixar para Android”.
@@ -9,24 +11,33 @@ Landing Page estática para divulgar o aplicativo “Cartões de Enfrentamento (
 - Acessibilidade, SEO e performance revisados (Lighthouse alvo ≥ 90).
 
 ## Stack
-- HTML + CSS + JavaScript (site estático). Sem build step.
-- CSS com tokens de tema (modo escuro por padrão, alto contraste).
-- Fonte: Inter (Google Fonts). OBS: Lemondrop possui licença comercial pendente (TODO em código; não embutir).
+- Vite + React + TypeScript + Tailwind CSS em `frontend/`.
+- ESLint + Prettier configurados (lint/format scripts).
+- Fonte: Inter (Google Fonts).
+- OBS: Lemondrop possui licença comercial pendente — NÃO embutir (ver TODOs).
 
 ## Estrutura
-- `index.html` — página principal com Header, Hero, Vídeo, Recursos e CTA final.
-- `style/style.css` — estilos + tokens (`--color-*`) e regras de acessibilidade.
-- `js/script.js` — comportamento do menu e suporte a foco/skip-link.
-- `js/i18n.js` — centralização de strings (PT-BR padrão), preparado para futura ES.
-- `img/` e `style/img/` — imagens e ícones.
+Site estático (legado):
+- `index.html`, `style/style.css`, `js/*.js`, `img/` — versão anterior preservada.
+
+App React (novo) em `frontend/`:
+- `index.html` — metadados básicos + fonte Inter + modo escuro padrão.
+- `src/main.tsx` e `src/App.tsx` — montagem e layout principal.
+- `src/components/` — componentes: `Header`, `Hero`, `VideoSection`, `Highlights`, `Features`, `Privacy`, `CtaDownload`, `Footer`, `SkipToContent`.
+- `src/config.ts` — define `ANDROID_URL`, `YOUTUBE_URL` e extrai `YOUTUBE_ID`.
+- `tailwind.config.ts`, `postcss.config.js`, `src/index.css` — Tailwind configurado.
+- `public/` — assets públicos. Copie logo/imagens necessárias para `frontend/public/img`.
 
 ## Rodando Localmente
-Opção 1 (abrir direto):
-- Abra `index.html` no navegador.
+Versão React (recomendado):
+- cd `frontend/`
+- Instale deps: `npm install`
+- Dev: `npm run dev`
+- Build: `npm run build`
+- Preview: `npm run preview`
 
-Opção 2 (servidor estático recomendado):
-- Python: `python3 -m http.server 8080`
-- Node: `npx http-server -p 8080`
+Versão estática (legado):
+- Abrir `index.html` direto no navegador, ou servir via `python3 -m http.server 8080`.
 
 Site em produção: domínio via `CNAME` (`dboa.com.br`).
 
@@ -42,9 +53,11 @@ Site em produção: domínio via `CNAME` (`dboa.com.br`).
 - Tokens: ver `:root` em `style/style.css` (modo escuro padrão).
 - Alvos mínimos de toque: 44×44 px (ver `.btn`, `.menu-open`, `.menu-close`).
 
-### i18n (opcional)
-- PT-BR é padrão em `js/i18n.js` via `window.APP_STRINGS`.
-- As strings no HTML usam `data-i18n`. Para ES, adicione um bloco `es` em `js/i18n.js` e um seletor de idioma.
+### Conteúdo dinâmico (React)
+- `src/config.ts` contém:
+  - `ANDROID_URL` — link do Play Store/APK. Padrão: `https://play.google.com/store/apps/details?id=com.dboa.dboa`. TODO: substitua por {{ANDROID_URL}} real.
+  - `YOUTUBE_URL` — URL do vídeo. Padrão: `https://www.youtube.com/watch?v=iBRxq5Pqt_k`. TODO: substitua por {{YOUTUBE_URL}} real.
+  - `YOUTUBE_ID` — extraído automaticamente de `YOUTUBE_URL`.
 
 ### SEO/Performance/A11y
 - SEO: `title`, `description`, OG/Twitter, `canonical` e `theme-color` presentes em `index.html`.
@@ -57,15 +70,14 @@ Site em produção: domínio via `CNAME` (`dboa.com.br`).
   - Estrutura semântica de headings.
 
 ## Parâmetros de Conteúdo
-- Android: `{{ANDROID_URL}}` — atualmente usando Play Store real `https://play.google.com/store/apps/details?id=com.dboa.dboa`.
-- YouTube: `{{VIDEO_ID}}` — atualmente usando `iBRxq5Pqt_k`. Substitua no `iframe` em `index.html` se necessário.
+- Android: `{{ANDROID_URL}}` — ver `frontend/src/config.ts`.
+- YouTube: `{{YOUTUBE_URL}}`/`{{VIDEO_ID}}` — ver `frontend/src/config.ts`.
 
 ## Checklist de validação
-- Teclado: Tab → “Pular para o conteúdo” → Enter → foco no “Baixar para Android” do Hero.
+- Tab → “Pular para o conteúdo” → foco no main → Tab → foco no botão “Baixar para Android” (Hero).
 - Vídeo `youtube-nocookie`, responsivo 16:9, `title` correto e link “Assistir no YouTube”.
 - Contraste AA/AAA; alvos 44×44; foco visível.
-- Strings centralizadas e prontas para i18n.
-- Lighthouse ≥ 90 (Performance, A11y, SEO, Best Practices).
+- Build `npm run build` e `npm run preview` funcionam em `frontend/`.
 
 ## Como contribuir
 - Crie uma branch a partir de `main` (ex.: `feat/...` ou `fix/...`).
