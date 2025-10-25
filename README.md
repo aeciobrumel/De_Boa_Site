@@ -66,3 +66,11 @@ Site em produção: domínio via `CNAME` (`dboa.com.br`).
 - Contraste AA/AAA; alvos 44×44; foco visível.
 - Strings centralizadas e prontas para i18n.
 - Lighthouse ≥ 90 (Performance, A11y, SEO, Best Practices).
+
+## Como contribuir
+- Crie uma branch a partir de `main` (ex.: `feat/...` ou `fix/...`).
+- Commits seguindo Conventional Commits.
+- Abra um PR descrevendo claramente as mudanças e screenshots quando visual.
+
+## Licença
+MIT — veja `LICENSE`.
