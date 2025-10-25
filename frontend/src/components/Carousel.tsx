@@ -80,9 +80,6 @@ export function Carousel({
     }
   }, [index])
 
-  const prevIndex = (index - 1 + images.length) % images.length
-  const nextIndex = (index + 1) % images.length
-
   return (
     <div
       ref={regionRef}
@@ -92,28 +89,9 @@ export function Carousel({
       tabIndex={0}
       className="group relative mx-auto w-full max-w-5xl"
     >
-      {/* Blurred previews on sides (decorative) */}
-      {images.length > 1 && (
-        <>
-          <img
-            aria-hidden
-            src={images[prevIndex]?.src}
-            className="pointer-events-none absolute inset-y-0 left-0 hidden w-1/4 scale-110 object-cover opacity-40 blur-md sm:block"
-          />
-          <img
-            aria-hidden
-            src={images[nextIndex]?.src}
-            className="pointer-events-none absolute inset-y-0 right-0 hidden w-1/4 scale-110 object-cover opacity-40 blur-md sm:block"
-          />
-          {/* Edge fades to blend */}
-          <div className="pointer-events-none absolute inset-y-0 left-0 hidden w-16 bg-gradient-to-r from-white to-transparent sm:block" />
-          <div className="pointer-events-none absolute inset-y-0 right-0 hidden w-16 bg-gradient-to-l from-white to-transparent sm:block" />
-        </>
-      )}
-
-      {/* Centered window to create gutters for previews */}
+      {/* Centered window */}
       <div className="relative z-10 flex justify-center">
-        <div className={`${maxHeightClass} w-4/5 sm:w-3/4 md:w-2/3 overflow-hidden rounded-xl ${containerClass}`}>
+        <div className={`${maxHeightClass} w-4/5 sm:w-3/4 md:w-2/5 overflow-hidden rounded-xl ${containerClass}`}>
           <div
             ref={trackRef}
             className="flex h-full w-full transition-transform duration-300 ease-out"
