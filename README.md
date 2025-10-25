@@ -28,16 +28,28 @@ App React (novo) em `frontend/`:
 - `tailwind.config.ts`, `postcss.config.js`, `src/index.css` — Tailwind configurado.
 - `public/` — assets públicos. Copie logo/imagens necessárias para `frontend/public/img`.
 
-## Rodando Localmente
-Versão React (recomendado):
-- cd `frontend/`
-- Instale deps: `npm install`
-- Dev: `npm run dev`
-- Build: `npm run build`
-- Preview: `npm run preview`
+## Rodando Localmente (React)
+Pré‑requisitos: Node.js 18+ e npm.
+
+Passo a passo rápido:
+- Entre na pasta do app: `cd frontend`
+- Instale dependências: `npm install`
+- Copie os assets essenciais (ou ajuste os caminhos nos componentes):
+  - `cp ../img/logo-horizontal-white.png public/img/`
+  - `cp ../img/celularApp.png public/img/`
+- Inicie em modo dev: `npm run dev` (geralmente em `http://localhost:5173`)
+
+Build e preview de produção:
+- `npm run build`
+- `npm run preview` (geralmente em `http://localhost:4173`)
 
 Versão estática (legado):
 - Abrir `index.html` direto no navegador, ou servir via `python3 -m http.server 8080`.
+
+Configurar links (opcional):
+- Edite `frontend/src/config.ts` para trocar:
+  - `ANDROID_URL` → URL real da Play Store/APK (// TODO: {{ANDROID_URL}})
+  - `YOUTUBE_URL` → URL real do vídeo (// TODO: {{YOUTUBE_URL}} — o `VIDEO_ID` é extraído automaticamente)
 
 Site em produção: domínio via `CNAME` (`dboa.com.br`).
 
