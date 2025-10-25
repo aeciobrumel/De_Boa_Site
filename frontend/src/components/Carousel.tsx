@@ -11,6 +11,8 @@ type Props = {
    * Altura máxima do carrossel. Use classes Tailwind (ex.: 'h-[50vh] md:h-[60vh]').
    */
   maxHeightClass?: string
+  /** Classes adicionais do container do carrossel (fundo, bordas, etc.) */
+  containerClass?: string
   ariaLabel?: string
 }
 
@@ -18,6 +20,7 @@ type Props = {
 export function Carousel({
   images,
   maxHeightClass = 'h-[50vh] md:h-[60vh]',
+  containerClass = 'bg-white border border-gray-200 shadow-sm',
   ariaLabel = 'Carrossel de imagens',
 }: Props) {
   const [index, setIndex] = useState(0)
@@ -86,7 +89,7 @@ export function Carousel({
       tabIndex={0}
       className="group relative mx-auto w-full max-w-5xl"
     >
-      <div className={`${maxHeightClass} w-full overflow-hidden rounded-xl bg-black`}>
+      <div className={`${maxHeightClass} w-full overflow-hidden rounded-xl ${containerClass}`}>
         <div
           ref={trackRef}
           className="flex h-full w-full transition-transform duration-300 ease-out"
