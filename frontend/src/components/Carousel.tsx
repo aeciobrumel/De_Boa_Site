@@ -91,10 +91,10 @@ export function Carousel({
     >
       {/* Centered window */}
       <div className="relative z-10 flex justify-center">
-        <div className={`${maxHeightClass} w-3/3 sm:w-3/4 md:w-4/5 overflow-hidden rounded-xl ${containerClass}`}>
+        <div className={`${maxHeightClass} w-3/5 sm:w-3/4 md:w-4/3 overflow-hidden rounded-xl ${containerClass}`}>
           <div
             ref={trackRef}
-            className="flex h-full w-full transition-transform  duration-300 ease-out"
+            className="flex h-full w-full transition-transform duration-300 ease-out"
             style={{ transform: `translateX(-${index * 100}%)` }}
           >
             {images.map((img, i) => (
