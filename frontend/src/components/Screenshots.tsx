@@ -32,6 +32,7 @@ export function Screenshots() {
           <Carousel
             images={screenshots}
             maxHeightClass="h-[40vh] sm:h-[45vh] md:h-[60vh]"
+            containerClass="bg-gray-100 md:bg-white border border-gray-200 shadow-sm p-2 sm:p-3 rounded-xl"
             ariaLabel="Galeria de imagens do app"
           />
         </div>

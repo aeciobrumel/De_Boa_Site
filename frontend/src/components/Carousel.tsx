@@ -138,7 +138,7 @@ export function Carousel({
             aria-label={`Ir para o slide ${i + 1}`}
             aria-current={i === index}
             onClick={() => goTo(i)}
-            className={`h-2 w-2 rounded-full ${i === index ? 'bg-white' : 'bg-white/40'} focus-visible:outline-accent`}
+            className={`h-2 w-2 rounded-full ${i === index ? 'bg-slate-700' : 'bg-slate-400'} focus-visible:outline-accent`}
           />)
         )}
       </div>
