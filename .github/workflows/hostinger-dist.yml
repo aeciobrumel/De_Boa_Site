@@ -2,7 +2,7 @@ name: Build and publish dist to hostinger-dist
 
 on:
   push:
-    branches: [ "main" ]
+    branches: ["main"]
   workflow_dispatch:
 
 jobs:
@@ -14,16 +14,11 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: npm
-          cache-dependency-path: frontend/package.json
-
-      # Se ainda não versionou as imagens em frontend/public/img,
-      # este passo copia do diretório raiz/img como contingência.
+          cache: 'npm'
       - name: Ensure assets exist
         run: |
           mkdir -p public/img
@@ -36,18 +31,14 @@ jobs:
           cp -f ../img/img-edit.jpeg public/img/ || true
           cp -f ../img/img-respira.jpeg public/img/ || true
           cp -f ../img/img-card.jpeg public/img/ || true
-
-      - name: Install deps
+      - name: Install dependencies
         run: npm ci
-
       - name: Build
         run: npm run build
-
-      - name: Publish dist to hostinger-dist branch
+      - name: Publish dist
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: frontend/dist
           publish_branch: hostinger-dist
           force_orphan: true
-
