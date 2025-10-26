@@ -143,7 +143,7 @@ export function Carousel({
         )}
       </div>
 
-      {/* Live region for screen readers */}
+      {/* Live region for scrddeen readers */}
       <div aria-live="polite" className="sr-only">{`Slide ${index + 1} de ${images.length}`}</div>
     </div>
   )
