@@ -1,8 +1,6 @@
 # Dboa — Cartões de Enfrentamento (Landing Page)
 
-Landing Page do app “Cartões de Enfrentamento (Dboa)”. O repositório agora contém:
-- Site original estático em HTML/CSS (raiz) — preservado.
-- Nova implementação em React + TypeScript + Tailwind (pasta `frontend/`).
+
 
 ## Visão Geral
 - Foco em clareza e acesso rápido ao CTA “Baixar para Android”.
