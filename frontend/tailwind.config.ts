@@ -17,6 +17,8 @@ export default {
         surface: '#152033',
       },
       fontFamily: {
+        sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+        display: ['Lemondrop', 'Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
         inter: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
       },
       borderRadius: {
@@ -26,4 +28,3 @@ export default {
   },
   plugins: [],
 } satisfies Config
-
