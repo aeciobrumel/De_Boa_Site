@@ -1,117 +1,64 @@
-# Dboa — Cartões de Enfrentamento (Landing Page)
+# dboa-landing-react
 
+Landing page do projeto DBoa, feita com React e Vite.
 
+![Vite](https://img.shields.io/badge/Vite-Tooling-646CFF?logo=vite&logoColor=white)
+![React](https://img.shields.io/badge/React-Library-61DAFB?logo=react&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-Language-3178C6?logo=typescript&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-UI-38B2AC?logo=tailwindcss&logoColor=white)
+![Licença](https://img.shields.io/badge/License-MIT-yellow.svg)
 
-## Visão Geral
-- Foco em clareza e acesso rápido ao CTA “Baixar para Android”.
-- Vídeo do YouTube com privacy-enhanced (`youtube-nocookie.com`), acessível e responsivo.
-- Seção de recursos curtos (respiração guiada, 5-4-3-2-1, afirmações, narração+música, vibração, modo offline, acessibilidade).
-- Acessibilidade, SEO e performance revisados (Lighthouse alvo ≥ 90).
+## Sumário
 
-## Stack
-- Vite + React + TypeScript + Tailwind CSS em `frontend/`.
-- ESLint + Prettier configurados (lint/format scripts).
-- Fonte: Inter (Google Fonts).
-- OBS: Lemondrop possui licença comercial pendente — NÃO embutir (ver TODOs).
+- [Instalação](#instalação)
+- [Prints](#prints)
+- [Tecnologias utilizadas](#tecnologias-utilizadas)
+- [Contribuição](#contribuição)
+- [Licença](#licença)
 
-## Estrutura
-Site estático (legado):
-- `index.html`, `style/style.css`, `js/*.js`, `img/` — versão anterior preservada.
+## Instalação
 
-App React (novo) em `frontend/`:
-- `index.html` — metadados básicos + fonte Inter.
-- `src/main.tsx` e `src/App.tsx` — montagem e layout principal.
-- `src/components/` — componentes: `Header`, `Hero`, `VideoSection`, `Highlights`, `Features`, `Privacy`, `CtaDownload`, `Footer`, `SkipToContent`.
-- `src/config.ts` — define `ANDROID_URL`, `YOUTUBE_URL` e extrai `YOUTUBE_ID`.
-- `tailwind.config.ts`, `postcss.config.js`, `src/index.css` — Tailwind configurado.
-- `public/` — assets públicos. Copie logo/imagens necessárias para `frontend/public/img`.
+Pré-requisitos: Node.js e npm.
 
-## Rodando Localmente (React)
-Pré‑requisitos: Node.js 18+ e npm.
+1. Entre na pasta do app: `cd frontend`
+2. Instale as dependências: `npm install`
+3. Inicie o servidor de desenvolvimento: `npm run dev`
 
-Passo a passo rápido:
-- Entre na pasta do app: `cd frontend`
-- Instale dependências: `npm install`
-- Copie os assets essenciais (ou ajuste os caminhos nos componentes):
-  - `cp ../img/logo-horizontal-white.png public/img/`
-  - `cp ../img/celularApp.png public/img/`
-  - Carrossel (opcional, recomendado):
-    - `cp ../img/img-inicial.jpeg public/img/`
-    - `cp ../img/img-menu.jpeg public/img/`
-    - `cp ../img/img-deck.jpeg public/img/`
-    - `cp ../img/img-edit.jpeg public/img/`
-    - `cp ../img/img-respira.jpeg public/img/`
-    - `cp ../img/img-card.jpeg public/img/`
-- Inicie em modo dev: `npm run dev` (geralmente em `http://localhost:5173`)
+Scripts úteis:
 
-Build e preview de produção:
 - `npm run build`
-- `npm run preview` (geralmente em `http://localhost:4173`)
+- `npm run preview`
+- `npm run lint`
+- `npm run format`
 
-## Rodando com Docker
-Opção Dev (hot reload):
-- `docker compose up frontend-dev`
-- Acesse `http://localhost:5173`
+## Prints
 
-Opção Produção (build e servir via Nginx):
-- Garanta que os assets foram copiados para `frontend/public/img` antes do build.
-- `docker compose up --build frontend-prod`
-- Acesse `http://localhost:8080`
+Adicione aqui as imagens do app/landing page em `docs/prints/`.
 
-Notas:
-- O serviço `frontend-dev` monta a pasta `frontend/` como volume (salvou → recarregou).
-- Se os assets de imagens não aparecerem, copie-os para `frontend/public/img` (ver comandos acima).
-- Portas: dev em 5173, prod em 8080 (ajuste em `docker-compose.yml` se necessário).
+![Tela inicial](docs/prints/home.png)
+![Seção de recursos](docs/prints/content.png)
+![Seção de recursos](docs/prints/telas.png)
+![rodape](docs/prints/footer.png)
 
-Versão estática (legado):
-- Abrir `index.html` direto no navegador, ou servir via `python3 -m http.server 8080`.
+## Tecnologias utilizadas
 
-Configurar links (opcional):
-- Edite `frontend/src/config.ts` para trocar:
-  - `ANDROID_URL` → URL real da Play Store/APK (// TODO: {{ANDROID_URL}})
-  - `YOUTUBE_URL` → URL real do vídeo (// TODO: {{YOUTUBE_URL}} — o `VIDEO_ID` é extraído automaticamente)
+- React
+- React DOM
+- Vite
+- TypeScript
+- Tailwind CSS
+- PostCSS
+- Autoprefixer
+- ESLint
+- Prettier
 
-Site em produção: domínio via `CNAME` (`dboa.com.br`).
+## Contribuição
 
-## Desenvolvimento
-- Branchs: feature → `feat/…`, correções → `fix/…`.
-- Commits: Conventional Commits (ex.: `feat(landing): ...`, `fix(a11y): ...`).
-
-### Padrões e Tema
-- Paleta:
-  - Primária `#36507D`
-  - Secundárias `#A6B3C8`, `#B4B1C6`
-  - Acento `#F8DBD8`
-- Tema: claro por padrão (dark mode desabilitado no app React).
-- Alvos mínimos de toque: 44×44 px (ver `.btn`, `.menu-open`, `.menu-close`).
-
-### Conteúdo dinâmico (React)
-- `src/config.ts` contém:
-  - `ANDROID_URL` — link do Play Store/APK. Padrão: `https://play.google.com/store/apps/details?id=com.dboa.dboa`. TODO: substitua por {{ANDROID_URL}} real.
-  - `YOUTUBE_URL` — URL do vídeo. Padrão: `https://www.youtube.com/watch?v=iBRxq5Pqt_k`. TODO: substitua por {{YOUTUBE_URL}} real.
-  - `YOUTUBE_ID` — extraído automaticamente de `YOUTUBE_URL`.
-
-### Seções e componentes (React)
-- Header / Hero (CTA “Baixar para Android”).
-- Highlights (ícones SVG personalizados).
-- VideoSection (youtube-nocookie, link alternativo).
-- Screenshots (carrossel + texto de benefícios, layout 2 colunas no desktop, bg cinza suave).
-- Features, Privacy, CTA final, Footer.
-
-### SEO/Performance/A11y
-- SEO: `title`, `description`, OG/Twitter, `canonical` e `theme-color` presentes em `index.html`.
-- Vídeo: `youtube-nocookie.com`, `loading="lazy"`, `title` acessível, `allow` seguro, `referrerPolicy` estrito, link alternativo “Assistir no YouTube”.
-- Imagens: `loading="lazy"` para conteúdo abaixo da dobra e textos alternativos descritivos.
-- A11y:
-  - Skip link: “Pular para o conteúdo”.
-  - Foco visível (`:focus-visible`).
-  - Navegação overlay com ARIA e botão de fechar.
-  - Estrutura semântica de headings.
-
-## Como contribuir
-- Crie uma branch a partir de `main` (ex.: `feat/...` ou `fix/...`).
-- Commits seguindo Conventional Commits.
-- Abra um PR descrevendo claramente as mudanças e screenshots quando visual.
+1. Faça um fork do repositório.
+2. Crie uma branch: `git checkout -b feat/minha-mudanca`
+3. Faça commits claros e envie sua branch.
+4. Abra um PR descrevendo o que mudou.
 
 ## Licença
+
 MIT — veja `LICENSE`.
