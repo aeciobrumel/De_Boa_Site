@@ -1,12 +1,12 @@
 import { Carousel } from './Carousel'
 
 const screenshots = [
-  { src: '/img/img-inicial.jpeg', alt: 'Tela inicial do aplicativo' },
-  { src: '/img/img-menu.jpeg', alt: 'Tela de menu do aplicativo' },
-  { src: '/img/img-deck.jpeg', alt: 'Tela de deck de cartões' },
-  { src: '/img/img-edit.jpeg', alt: 'Tela de edição de cartão' },
-  { src: '/img/img-respira.jpeg', alt: 'Tela de respiração guiada' },
-  { src: '/img/img-card.jpeg', alt: 'Exemplo de cartão narrado' },
+  { src: '/img/home.png', alt: 'Tela inicial do aplicativo' },
+  { src: '/img/musica.jpeg', alt: 'Tela de edição de música' },
+  { src: '/img/drtop.jpeg', alt: 'Tela de deck de cartões' },
+  { src: '/img/edid.jpeg', alt: 'Tela de edição de cartão' },
+  { src: '/img/resp.jpeg', alt: 'Tela de respiração guiada' },
+  { src: '/img/pass.jpeg', alt: 'Exemplo de cartão narrado' },
 ]
 
 export function Screenshots() {
