@@ -16,7 +16,7 @@ type Props = {
   ariaLabel?: string
 }
 
-// A11y-friendly, responsive carousel without autoplay
+// A11y-friendly, responsive carousel with autoplay
 export function Carousel({
   images,
   maxHeightClass = 'h-[50vh] md:h-[60vh]',
@@ -30,6 +30,16 @@ export function Carousel({
   const goTo = (i: number) => setIndex((i + images.length) % images.length)
   const prev = () => goTo(index - 1)
   const next = () => goTo(index + 1)
+
+  // Autoplay every 5 seconds
+  useEffect(() => {
+    if (images.length <= 1) return
+    const timer = window.setInterval(() => {
+      setIndex((current) => (current + 1) % images.length)
+    }, 5000)
+
+    return () => window.clearInterval(timer)
+  }, [images.length])
 
   // Keyboard navigation when region focused
   useEffect(() => {

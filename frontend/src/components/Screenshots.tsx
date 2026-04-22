@@ -11,27 +11,29 @@ const screenshots = [
 
 export function Screenshots() {
   return (
-    <section aria-labelledby="screenshots-title" className="bg-[#f9fafb] py-12">
+    <section
+      aria-labelledby="screenshots-title"
+      className="border-t border-[#dde4f1] bg-[#f7f9fc] py-10 sm:py-14"
+    >
       <div className="mx-auto grid max-w-5xl grid-cols-1 items-center gap-8 px-6 md:grid-cols-2">
         <div>
-          <h2 id="screenshots-title" className="mb-4 text-2xl font-bold">
-            Imagens do app
+          <h2 id="screenshots-title" className="mb-3 text-xl font-bold text-primary sm:mb-4 sm:text-2xl">
+            Veja o fluxo no app
           </h2>
-          <p className="mb-4 text-slate-600">
-            Acompanhe cartas guiadas, respiração e narração com música para reduzir a ansiedade.
-            Personalize seus cartões, organize seu deck e use mesmo offline.
+          <p className="mb-3 text-sm leading-6 text-slate-700 sm:mb-4 sm:text-base sm:leading-8">
+            Monte seus cartões antes da crise. Na hora difícil, siga o guia.
           </p>
-          <ul className="list-disc space-y-2 pl-5 text-slate-700">
-            <li>Crie e edite seus próprios cartões.</li>
-            <li>Respiração guiada e técnica 5-4-3-2-1.</li>
-            <li>Narração com música e vibração opcional.</li>
-            <li>Funciona offline e com acessibilidade aprimorada.</li>
+          <ul className="space-y-2.5 text-sm text-slate-700 sm:space-y-3 sm:text-base">
+            <li>Personalize os cartões com frases do seu jeito.</li>
+            <li>Deixe tudo pronto antes da crise.</li>
+            <li>Na hora difícil, siga o passo a passo.</li>
+            <li>Use áudio e vibração para manter o foco.</li>
           </ul>
         </div>
         <div>
           <Carousel
             images={screenshots}
-            maxHeightClass="h-[40vh] sm:h-[45vh] md:h-[60vh]"
+            maxHeightClass="h-[34vh] sm:h-[40vh] md:h-[52vh]"
             containerClass="bg-gray-100  border border-gray-200 shadow-sm p-2 sm:p-3 rounded-xl"
             ariaLabel="Galeria de imagens do app"
           />

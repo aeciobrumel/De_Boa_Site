@@ -1,27 +1,30 @@
 export function Features() {
   const features = [
-    { title: 'Respiração guiada', icon: InfoIcon },
+    { title: 'Cartões personalizados', icon: InfoIcon },
     { title: 'Técnica 5-4-3-2-1', icon: ListIcon },
-    { title: 'Afirmações', icon: CircleIcon },
-    { title: 'Narração + música', icon: ArrowsIcon },
-    { title: 'Vibração/Haptics', icon: LinesIcon },
-    { title: 'Modo offline', icon: DeviceIcon },
-    { title: 'Acessibilidade', icon: A11yIcon },
+    { title: 'Frases de enfrentamento', icon: CircleIcon },
+    { title: 'Narração com música', icon: ArrowsIcon },
+    { title: 'Vibração opcional', icon: LinesIcon },
+    { title: 'Uso offline', icon: DeviceIcon },
+    { title: 'Respiração guiada', icon: A11yIcon },
   ]
   return (
-    <section aria-labelledby="recursos-title" className="py-12">
+    <section aria-labelledby="recursos-title" className="border-t border-[#dde4f1] bg-white py-8 sm:py-14">
       <div className="mx-auto max-w-5xl px-6">
-        <h2 id="recursos-title" className="mb-6 text-2xl font-bold">
-          Recursos do app
+        <h2
+          id="recursos-title"
+          className="mb-3 text-lg font-bold leading-tight text-primary sm:mb-6 sm:text-2xl"
+        >
+          Recursos que reforçam o método
         </h2>
-        <ul className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">
+        <ul className="grid grid-cols-1 gap-3 sm:grid-cols-2 md:grid-cols-3">
           {features.map(({ title, icon: Icon }) => (
             <li
               key={title}
-              className="flex items-center gap-3 rounded-xl border border-gray-200 bg-white p-4"
+              className="flex items-center gap-2 rounded-2xl border border-gray-200 bg-white p-2.5 sm:gap-3 sm:p-4"
             >
-              <Icon className="h-6 w-6 text-secondary1" aria-hidden />
-              <span>{title}</span>
+              <Icon className="h-[18px] w-[18px] text-secondary1 sm:h-6 sm:w-6" aria-hidden />
+              <span className="text-[0.95rem] sm:text-base">{title}</span>
             </li>
           ))}
         </ul>

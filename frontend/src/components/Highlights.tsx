@@ -1,16 +1,39 @@
 export function Highlights() {
   const items = [
-    { label: 'Indicado por psicólogos', icon: PsychIconCustom },
-    { label: 'Não medicamentoso', icon: PillIconPhosphor },
-    { label: 'Ajuda no bem estar', icon: MeditateWIcon },
+    {
+      title: 'Apoio digital',
+      description: 'Cartões de enfrentamento no celular',
+      icon: PsychIconCustom,
+    },
+    {
+      title: 'Complementar',
+      description: 'Não substitui tratamento ou medicação',
+      icon: PillIconPhosphor,
+    },
+    {
+      title: 'Uso rápido',
+      description: 'Pensado para momentos de crise',
+      icon: MeditateWIcon,
+    },
   ]
+
   return (
-    <section aria-label="Destaques" className="bg-[#36507d] text-black">
-      <div className="mx-auto flex max-w-5xl flex-wrap items-center justify-around gap-6 px-6 py-6">
-        {items.map(({ label, icon: Icon }) => (
-          <div key={label} className="flex flex-col items-center gap-2 text-center">
-            <Icon className="h-10 w-10" aria-hidden />
-            <span className="font-bold text-white">{label}</span>
+    <section aria-label="Destaques" className="border-t border-[#dde4f1] bg-primary text-black">
+      <div className="mx-auto grid max-w-5xl grid-cols-3 gap-1.5 px-2 py-3 sm:gap-6 sm:px-6 sm:py-7">
+        {items.map(({ title, description, icon: Icon }) => (
+          <div
+            key={title}
+            className="flex min-w-0 flex-col items-center gap-1.5 rounded-xl px-0.5 text-center sm:gap-3"
+          >
+            <Icon className="h-6 w-6 sm:h-10 sm:w-10" aria-hidden />
+            <div className="min-w-0">
+              <span className="block text-[9px] font-bold leading-[1] text-white sm:text-base sm:leading-5">
+                {title}
+              </span>
+              <span className="mt-1 hidden text-sm leading-5 text-white/85 sm:block">
+                {description}
+              </span>
+            </div>
           </div>
         ))}
       </div>

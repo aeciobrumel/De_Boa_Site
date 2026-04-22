@@ -8,6 +8,7 @@ import { Privacy } from './components/Privacy'
 import { CtaDownload } from './components/CtaDownload'
 import { SkipToContent } from './components/SkipToContent'
 import { Screenshots } from './components/Screenshots'
+import { HeroQuote } from './components/HeroQuote'
 
 function App() {
   return (
@@ -16,10 +17,11 @@ function App() {
       <Header />
       <main id="main-content" tabIndex={-1} className="focus:outline-none">
         <Hero />
+        <HeroQuote />
         <Highlights />
         <VideoSection />
-        <Screenshots />
         <Features />
+        <Screenshots />
         <Privacy />
         <CtaDownload />
       </main>
