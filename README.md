@@ -33,12 +33,11 @@ Scripts úteis:
 
 ## Prints
 
-Adicione aqui as imagens do app/landing page em `docs/prints/`.
 
-![Tela inicial](docs/prints/home.png)
-![Seção de recursos](docs/prints/content.png)
-![Seção de recursos](docs/prints/telas.png)
-![rodape](docs/prints/footer.png)
+<img width="944" height="494" alt="image" src="https://github.com/user-attachments/assets/1259b764-c26e-4448-bbca-5a28b129b8c1" />
+<img width="940" height="500" alt="image" src="https://github.com/user-attachments/assets/f719ea8f-db13-4b48-abad-2bca19605014" />
+<img width="943" height="499" alt="image" src="https://github.com/user-attachments/assets/447b8e22-e535-472c-8bd7-e9d00538f9fe" />
+
 
 ## Tecnologias utilizadas
 
