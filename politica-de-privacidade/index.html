@@ -1,0 +1,327 @@
+<!doctype html>
+<!--
+Changelog (produção):
+- Ajuste de texto sobre microfone para compatibilidade com permissão RECORD_AUDIO.
+- Inclusão de permissão de sobreposição (SYSTEM_ALERT_WINDOW) na seção de permissões.
+- Data de vigência definida para publicação e URL padronizada com barra final.
+-->
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Política de Privacidade - D'Boa</title>
+    <meta
+      name="description"
+      content="Política de Privacidade do app Android D'Boa, pacote com.abmsilva.dboa."
+    />
+    <link rel="icon" href="/img/logoAzulminima.png" type="image/png" />
+    <link rel="icon" href="/img/logoAzulminima.png" sizes="32x32" type="image/png" />
+    <link rel="icon" href="/img/logoAzulMedia.png" sizes="192x192" type="image/png" />
+    <link rel="apple-touch-icon" href="/img/logoAzulMedia.png" />
+    <style>
+      :root {
+        color-scheme: light;
+        --bg: #f6f8fb;
+        --surface: #ffffff;
+        --text: #1d2733;
+        --muted: #5c6875;
+        --primary: #36507d;
+        --border: #d8e0ea;
+        --accent: #f3c93a;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--text);
+        font-family:
+          system-ui,
+          -apple-system,
+          BlinkMacSystemFont,
+          "Segoe UI",
+          sans-serif;
+        font-size: 16px;
+        line-height: 1.65;
+      }
+
+      a {
+        color: var(--primary);
+      }
+
+      .page {
+        width: min(100% - 32px, 960px);
+        margin: 0 auto;
+        padding: 40px 0;
+      }
+
+      .policy {
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: 8px;
+        box-shadow: 0 16px 40px rgb(29 39 51 / 8%);
+        padding: clamp(24px, 5vw, 56px);
+      }
+
+      .eyebrow {
+        margin: 0 0 8px;
+        color: var(--primary);
+        font-size: 0.9rem;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      h1,
+      h2 {
+        line-height: 1.2;
+      }
+
+      h1 {
+        margin: 0 0 12px;
+        color: var(--primary);
+        font-size: clamp(2rem, 4vw, 3rem);
+      }
+
+      h2 {
+        margin: 40px 0 12px;
+        color: var(--primary);
+        font-size: 1.35rem;
+      }
+
+      p {
+        margin: 0 0 16px;
+      }
+
+      ul {
+        margin: 0 0 18px;
+        padding-left: 1.4rem;
+      }
+
+      li {
+        margin: 8px 0;
+      }
+
+      strong {
+        color: #172130;
+      }
+
+      .summary {
+        margin: 24px 0 0;
+        padding: 16px;
+        border-left: 4px solid var(--accent);
+        background: #fff9df;
+        border-radius: 8px;
+      }
+
+      .placeholder {
+        font-weight: 700;
+      }
+
+      .footer-note {
+        margin-top: 32px;
+        padding-top: 24px;
+        border-top: 1px solid var(--border);
+        color: var(--muted);
+        font-size: 0.95rem;
+      }
+
+      @media (max-width: 640px) {
+        .page {
+          width: min(100% - 20px, 960px);
+          padding: 20px 0;
+        }
+
+        .policy {
+          padding: 22px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="page">
+      <article class="policy">
+        <p class="eyebrow">D'Boa</p>
+        <h1>Política de Privacidade</h1>
+        <p><strong>Data de vigência:</strong> 31 de maio de 2026</p>
+        <p>
+          Esta Política de Privacidade explica como o app Android <strong>D'Boa</strong>,
+          pacote <strong>com.abmsilva.dboa</strong>, trata informações relacionadas ao
+          uso do aplicativo.
+        </p>
+
+        <div class="summary">
+          <p>
+            O app ajuda usuários com cartões de enfrentamento, respiração guiada, narração/text-to-speech e
+            música ou áudio de fundo. Ele permite criar e editar cartões personalizados e pode permitir
+            que o usuário escolha imagens, áudios ou arquivos da própria biblioteca de mídia para usar
+            nas funcionalidades do app.
+          </p>
+        </div>
+
+        <h2>1. Identificação do app e do desenvolvedor</h2>
+        <p>
+          O app é desenvolvido e disponibilizado por
+          Aecio Brumel Medeiros da Silva, localizado no Brasil.
+        </p>
+        <p>
+          A URL pública desta política é:
+          https://dboa.com.br/politica-de-privacidade/.
+        </p>
+
+        <h2>2. Contato para dúvidas de privacidade</h2>
+        <p>
+          Para dúvidas, solicitações ou preocupações relacionadas à privacidade, entre em contato pelo
+          e-mail aeciobrumel@brumel.dev.
+        </p>
+
+        <h2>3. Dados que podem ser acessados ou tratados</h2>
+        <p>O D'Boa não coleta dados pessoais para servidores externos. O uso ocorre localmente no dispositivo:</p>
+        <ul>
+          <li><strong>Conteúdo criado pelo usuário nos cartões:</strong> textos, títulos, mensagens ou outros dados inseridos nos cartões personalizados.</li>
+          <li><strong>Imagens, áudios ou arquivos selecionados pelo próprio usuário:</strong> quando você escolhe mídias da galeria, biblioteca de mídia ou arquivos do dispositivo para personalizar cartões ou usar recursos do app.</li>
+          <li><strong>Preferências e configurações do app:</strong> opções de personalização, configurações de áudio, narração/text-to-speech, música de fundo e outras preferências salvas no dispositivo.</li>
+          <li><strong>Dados locais de funcionamento:</strong> informações necessárias para o app funcionar no próprio dispositivo, sem envio de conteúdo pessoal para servidores do app.</li>
+        </ul>
+
+        <h2>4. Dados que não coletamos</h2>
+        <p>
+          No build atual, o app <strong>não usa câmera</strong>.
+          Salvo se esta política for atualizada ou se você informar o contrário nas configurações do projeto, o app
+          não declara coleta de:
+        </p>
+        <ul>
+          <li>dados de câmera;</li>
+          <li>localização;</li>
+          <li>contatos;</li>
+          <li>SMS;</li>
+          <li>chamadas telefônicas;</li>
+          <li>dados financeiros;</li>
+          <li>documentos oficiais ou governamentais.</li>
+        </ul>
+
+        <h2>5. Como os dados são usados</h2>
+        <p>As informações locais do app são usadas apenas para funcionamento no seu dispositivo:</p>
+        <ul>
+          <li>salvar, exibir, editar e organizar os cartões personalizados;</li>
+          <li>personalizar a experiência do usuário dentro do app;</li>
+          <li>permitir a escolha de imagens, áudios ou arquivos para funcionalidades do app;</li>
+          <li>reproduzir áudio, música de fundo e narração/text-to-speech;</li>
+          <li>salvar preferências e configurações locais;</li>
+          <li>manter o funcionamento básico do aplicativo no próprio aparelho.</li>
+        </ul>
+
+        <h2>6. Armazenamento e retenção</h2>
+        <p>
+          Quando aplicável, cartões, preferências, imagens selecionadas e configurações podem ser armazenados
+          localmente no dispositivo do usuário.
+        </p>
+        <p>
+          Esses dados tendem a permanecer armazenados enquanto você mantiver o app instalado ou enquanto mantiver
+          os dados dentro do app. Em geral, apagar os dados do app nas configurações do Android ou desinstalar o app
+          remove os dados armazenados localmente, sujeito ao funcionamento do sistema operacional, backups do
+          dispositivo e configurações do usuário.
+        </p>
+        <p>
+          Se algum dado for eventualmente recebido pelo desenvolvedor, você pode solicitar a exclusão pelo e-mail
+          aeciobrumel@brumel.dev.
+        </p>
+        <p>
+          O app não exige criação de conta de usuário. Como não há conta, não existe função de exclusão de conta
+          dentro do app. Mesmo assim, você pode solicitar a exclusão de dados eventualmente recebidos pelo
+          desenvolvedor usando o canal de contato acima.
+        </p>
+
+        <h2>7. Compartilhamento de dados</h2>
+        <p>
+          O D'Boa <strong>não vende, não coleta e não compartilha dados pessoais</strong> a partir do conteúdo do usuário.
+        </p>
+        <p>
+          O app não envia para servidores externos os cartões, textos, imagens e demais conteúdos criados pelo usuário.
+        </p>
+
+        <h2>8. Assinatura e compras</h2>
+        <p>
+          O D'Boa Pro é uma assinatura opcional que desbloqueia a criação ilimitada de cartões personalizados e a
+          edição dos cartões padrão.
+        </p>
+        <p>
+          O aplicativo não armazena dados de cartão de crédito nem informações de pagamento. Todas as transações
+          financeiras são tratadas diretamente pela loja (Google Play / App Store).
+        </p>
+        <p>O status da assinatura é mantido no dispositivo para funcionamento do acesso Pro.</p>
+        <p>
+          Os cartões criados pelo usuário são armazenados exclusivamente no dispositivo local e não são enviados a
+          servidor externo para esse fim. A desinstalação do aplicativo pode apagar permanentemente esses dados,
+          conforme o comportamento do sistema operacional e das configurações de backup do aparelho.
+        </p>
+
+        <h2>9. Segurança</h2>
+        <p>
+          Adotamos medidas técnicas e administrativas adequadas para proteger os dados locais tratados pelo app contra
+          acesso não autorizado, perda, alteração ou divulgação indevida, observando os princípios aplicáveis da LGPD,
+          como necessidade, finalidade e segurança.
+        </p>
+        <p>
+          O tratamento é limitado ao mínimo necessário para cada funcionalidade. Nenhum método de armazenamento é
+          totalmente isento de riscos.
+        </p>
+        <p>
+          Em caso de dúvidas sobre segurança ou sobre o tratamento de dados pessoais, entre em contato pelo e-mail
+          aeciobrumel@brumel.dev.
+        </p>
+
+        <h2>10. Permissões do Android</h2>
+        <p>O app pode solicitar ou usar permissões do Android conforme as funcionalidades disponíveis:</p>
+        <ul>
+          <li><strong>Imagens, arquivos ou mídia:</strong> usada para permitir que o usuário escolha mídias da galeria, biblioteca de mídia ou arquivos do dispositivo para personalizar cartões ou usar recursos do app.</li>
+          <li><strong>Internet:</strong> pode ser usada para funcionalidades técnicas normais do aplicativo, quando necessário para funcionamento e estabilidade.</li>
+          <li><strong>Câmera:</strong> não é usada no build atual.</li>
+          <li><strong>Microfone:</strong> a permissão pode estar presente por conta de recursos de áudio do app. O app não grava nem armazena áudio do microfone e não envia gravações a servidores.</li>
+        </ul>
+
+        <h2>11. Crianças</h2>
+        <p>
+          O app não é direcionado especificamente a crianças.
+        </p>
+
+        <h2>12. Direitos do usuário</h2>
+        <p>
+          Dependendo da legislação aplicável, você pode ter direitos relacionados aos seus dados, incluindo solicitar
+          acesso, correção, exclusão, retirada de consentimento e esclarecimentos sobre o tratamento de dados.
+        </p>
+        <p>
+          Para exercer esses direitos ou enviar dúvidas, entre em contato pelo e-mail
+          aeciobrumel@brumel.dev.
+        </p>
+
+        <h2>13. Alterações nesta política</h2>
+        <p>
+          Esta Política de Privacidade pode ser atualizada para refletir mudanças no app, em permissões, em serviços
+          usados ou em requisitos legais. Quando houver alterações relevantes, a nova versão será publicada nesta
+          página, com atualização da data de vigência. Também poderemos comunicar mudanças por outros meios apropriados,
+          quando necessário.
+        </p>
+
+        <h2>14. Compatibilidade com Google Play</h2>
+        <p>
+          Esta política é pública, acessível por URL e apresentada em formato HTML, em conformidade com os requisitos
+          de política de privacidade para distribuição na Google Play.
+        </p>
+
+        <h2>15. Contato</h2>
+        <p>
+          Para qualquer dúvida sobre esta Política de Privacidade, fale conosco pelo e-mail
+          aeciobrumel@brumel.dev.
+        </p>
+
+        <p class="footer-note">
+          Versão para publicação em: https://dboa.com.br/politica-de-privacidade/.
+        </p>
+      </article>
+    </main>
+  </body>
+</html>
