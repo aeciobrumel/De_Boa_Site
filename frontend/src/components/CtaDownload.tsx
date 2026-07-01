@@ -1,4 +1,5 @@
 import { ANDROID_URL } from '../config'
+import { PlayStoreIcon } from './PlayStoreIcon'
 
 export function CtaDownload() {
   return (
@@ -18,6 +19,7 @@ export function CtaDownload() {
             target="_blank"
             rel="noopener noreferrer"
           >
+            <PlayStoreIcon className="mr-2 h-4 w-4 shrink-0 sm:h-5 sm:w-5" />
             Baixar para Android
           </a>
         </div>

@@ -1,4 +1,5 @@
 import { ANDROID_URL } from '../config'
+import { PlayStoreIcon } from './PlayStoreIcon'
 
 export function Hero() {
   return (
@@ -27,6 +28,7 @@ export function Hero() {
               target="_blank"
               rel="noopener noreferrer"
             >
+              <PlayStoreIcon className="mr-2 h-5 w-5 shrink-0" monochrome />
               Baixe agora
             </a>
           </div>

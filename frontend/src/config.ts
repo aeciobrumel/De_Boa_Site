@@ -1,7 +1,5 @@
 // Conteúdo dinâmico: URLs e IDs
-// TODO: Atualize com os links reais fornecidos
-export const ANDROID_URL =
-  'https://drive.google.com/file/d/1XDMJmjj43Y21eKt5jrpQN3fYEageP-L2/view?usp=drive_link' // TODO: {{ANDROID_URL}}
+export const ANDROID_URL = 'https://play.google.com/store/apps/details?id=com.abmsilva.dboa'
 
 export const YOUTUBE_URL = 'https://www.youtube.com/watch?v=iBRxq5Pqt_k' // TODO: {{YOUTUBE_URL}}
 
@@ -21,4 +19,3 @@ export function extractYouTubeId(url: string): string | null {
 }
 
 export const YOUTUBE_ID = extractYouTubeId(YOUTUBE_URL) || 'iBRxq5Pqt_k'
-
